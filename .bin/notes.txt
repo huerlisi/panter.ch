@@ -1,0 +1,9 @@
+for f in *.ori.jpg
+do
+    new=`echo $f | sed 's/ori\.//'`
+    convert $f -thumbnail '190x200' $new
+done
+
+
+
+
