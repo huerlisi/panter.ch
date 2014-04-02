@@ -131,6 +131,9 @@ body {
   padding-top: 70px;
 }
 
+.slogan {
+  color: #000;
+}
 h1, h2, h4 {
   margin: 0;
   padding: 0;
@@ -145,15 +148,15 @@ h1 {
 }
 
 h2 {
-  font-size: 48pt;
+  font-size: 40pt;
 }
 
 h4 {
-  font-size: 30pt;
+  font-size: 20pt;
 }
 
 p {
-  font-size: 30pt;
+  font-size: 26pt;
 }
 
 .smaller {
@@ -179,7 +182,7 @@ a:active, a:hover {
   line-height: 68px;
   position: fixed;
   top: 0;
-  box-shadow: 0 2px 5px #EEE;
+  box-shadow: 0 1px 2px #EEE;
   background-color: #FFF;
   z-index: 1000;
   display: block;
@@ -223,10 +226,12 @@ a:active, a:hover {
   top: 27px;
   height: 17px;
   width: 24px;
-  background: url(../img/go-to-top.png) center center no-repeat;
-  background-size: 24px;
+  background: url(../img/go-to-top.png) center center no-repeat;  background-size: 24px;
   text-indent: -9999px;
 }
+
+div
+
 
 .navbar a.lang {
   position: absolute;
@@ -255,12 +260,15 @@ a:active, a:hover {
 }
 
 .welcome {
-  background-image: url(../img/ci/people.jpg);
-  background-size: 100% auto;
-  background-position: bottom center;
-  background-repeat: no-repeat no-repeat;
+  background: url(../img/ci/montage.jpg) left top repeat;
+  background-size: auto 100%;
+  background-position: 0 0;
   padding: 80px 0;
   height: 380px;
+  -webkit-transition: background-position 3000s linear;
+     -moz-transition: background-position 3000s linear;
+       -o-transition: background-position 3000s linear;
+          transition: background-position 3000s linear;
 }
 
 .welcome h1 {
@@ -270,7 +278,7 @@ a:active, a:hover {
 
 .welcome img {
   display: block;
-  height: 51px;
+  height: 120px;;
 }
 
 .team-member {
@@ -351,6 +359,81 @@ a:active, a:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 16pt;
 }
+
+.control {
+  width: 5%;
+}
+
+.cycle-slideshow {
+  height: 580px;
+}
+
+.slider {
+  margin: 0 5%;
+  width: 90%;
+  padding-top: 15px;
+}
+.slider-img {
+  padding-right: 2%;
+}
+
+.slider-img img {
+  width: 48%;
+  float: left;
+  box-shadow: 0 0 15px #666;
+  margin-top: 15px;
+}
+
+.slider-text {
+  width: 46%;
+  text-align: left;
+  vertical-align: top;
+  float: left;
+  padding-left: 4%;
+}
+
+.slider-text h4 {
+  font-size: 16pt;
+}
+
+.slider-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16pt;
+}
+
+.slider-prev, .slider-next {
+  position: absolute;
+  top: 50%;
+  height: 24px;
+  width: 17px;
+  text-indent: -9999px;
+  background-size: 17px;
+  z-index: 500;
+}
+
+.slider-prev {
+  left:0;
+  background: url(../img/left.png) center center no-repeat;
+}
+
+.slider-next {
+  right:0;
+  background: url(../img/right.png) center center no-repeat;
+}
+
+.slider-container {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.border-radius {
+  border-radius: 4%;
+}
+.cycle-slideshow {
+  width: 100%;
+}
+
 
 .customer-item {
   position: relative;
@@ -459,6 +542,10 @@ label{
   width:98%;
 }
 
+label {
+  font-family: "Open Sans", sans-serif;
+}
+
 label .asterisk{
   position:absolute;
   top:36px;
@@ -506,7 +593,20 @@ select{
   color:#cc6600;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 970px) {
+  .stroke {
+    display: none;
+  }
+  .slogan {
+    display: block;
+    text-align: center;
+  }
+  .brand {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1030px) {
   .navbar ul {
     display: none;
     background-color: #fff;
@@ -539,10 +639,6 @@ select{
     padding: 0 26px;
   }
 
-  .welcome {
-    background-size: auto 100%;
-  }
-
   .menu-link {
     display: block;
   }
@@ -555,32 +651,52 @@ select{
     float: none;
   }
 }
-
-@media (max-width: 970px) {
-  .stroke {
-    display: none;
-  }
-  .slogan {
-    display: block;
-    text-align: center;
-  }
-  .brand {
-    margin: 0 auto;
+@media (max-width: 930px) {
+  .welcome {
+    background-size: auto 100%;
   }
 }
 
-@media (max-width: 640px) {
-  .customer-item {
-    width: 49%;
-    margin: 0;
-    padding: 0;
+@media (max-width: 840px) {
+  .cycle-slideshow {
+    height: 1040px;
+  }
+  .slider-img {
+    padding-bottom: 30px;
+    padding-right: 0;
   }
 
+  .slider-img img {
+    float: none;
+    width: 100%;
+  }
+
+  .slider-text {
+    width: 100%;
+    text-align: center;
+    float: none;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 640px) {
   body {
     overflow-x: hidden;
+    padding-top: 55px;
+  }
+
+  .navbar {
+    line-height: 60px;
+    height: 60px;
+  }
+
+  .navbar a.go-to-top {
+    padding: 22px 26px;
+  }
+
+  .welcome {
+    background-size: auto 100%;
+    padding-top: 30px;
   }
 
   .welcome h1 {
@@ -616,8 +732,14 @@ select{
     width: 97%;
   }
 
-  .info p {
+  .info p, .slider-text p {
     font-size: 15px;
+  }
+
+  .customer-item {
+    width: 49%;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -685,4 +807,10 @@ h2,
 h3 {
   page-break-after: avoid;
 }
+}
+
+
+.header {
+  color: #000;
+  text-shadow: 0 0 5px #ddd
 }
