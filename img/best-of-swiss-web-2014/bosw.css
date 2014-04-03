@@ -244,3 +244,10 @@ a > .screenshot:hover {
 .team-width {
   max-height: 98%;
 }
+
+.bosw-link {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 26px;
+}

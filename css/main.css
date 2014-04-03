@@ -260,18 +260,27 @@ div
 }
 
 .welcome {
-  background: url(../img/ci/montage.jpg) left top repeat;
+  position: relative;
+  background: #ffffff url(../img/ci/bestofswissweb.jpg) center top no-repeat;
   background-size: auto 100%;
-  background-position: 0 0;
-  padding: 80px 0;
-  height: 380px;
-  -webkit-transition: background-position 3000s linear;
-     -moz-transition: background-position 3000s linear;
-       -o-transition: background-position 3000s linear;
-          transition: background-position 3000s linear;
+  height: 475px;
+}
+
+.welcome a.bosw {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 343px;
+  height: 285px;
+  background: url(../img/ci/star.png) no-repeat;
+  background-size: auto 100%;
 }
 
 .welcome h1 {
+  display: none;
   padding: 15px 0;
   font-size: 50px;
 }
@@ -593,6 +602,12 @@ select{
   color:#cc6600;
 }
 
+@media (max-width: 1313px) {
+  .welcome {
+    background-position: left top;
+  }
+}
+
 @media (max-width: 970px) {
   .stroke {
     display: none;
@@ -650,10 +665,13 @@ select{
   .address {
     float: none;
   }
+  .welcome {
+    height: 320px;
+  }
 }
 @media (max-width: 930px) {
   .welcome {
-    background-size: auto 100%;
+    background-position: left top;
   }
 }
 
@@ -695,8 +713,7 @@ select{
   }
 
   .welcome {
-    background-size: auto 100%;
-    padding-top: 30px;
+    height: 215px;
   }
 
   .welcome h1 {
@@ -706,6 +723,11 @@ select{
   .welcome img {
     max-height: 51px;
     max-width: 100%;
+  }
+
+  .welcome a.bosw {
+    width: 241px;
+    height: 200px;
   }
 
   h2 {
