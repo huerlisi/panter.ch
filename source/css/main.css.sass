@@ -1,0 +1,509 @@
+@import 'compass'
+@import 'compass/utilities/sprites'
+@import 'icons/*.png'
+@include all-icons-sprites
+
+.container_12
+  max-width: 985px
+  margin-left: auto
+  margin-right: auto
+
+.grid_12
+  display: block
+  position: relative
+  margin-left: 1%
+  margin-right: 1%
+
+.container_12
+  .grid_12
+    width: 98.0%
+  .suffix_11
+    padding-right: 91.667%
+
+body, html
+  margin: 0
+  padding: 0
+
+body
+  color: #666
+  font-family: 'Merriweather', serif
+  text-align: center
+  padding-top: 70px
+
+.slogan
+  color: #000
+
+h1, h2, h4
+  margin: 0
+  padding: 0
+  font-family: 'Open Sans', sans-serif
+  font-weight: bold
+
+h1
+  font-size: 100px
+  color: #000
+  text-align: left
+
+h2
+  font-size: 40pt
+
+h4
+  font-size: 20pt
+
+p
+  font-size: 26pt
+
+.smaller
+  font-family: 'Open Sans', sans-serif
+  font-size: 23pt
+
+a
+  color: #000
+  &:active, &:hover
+    color: #666
+
+.navbar
+  width: 100%
+  height: 70px
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  line-height: 68px
+  position: fixed
+  top: 0
+  box-shadow: 0 1px 2px #EEE
+  background-color: #FFF
+  z-index: 1000
+  display: block
+  ul
+    margin: 0 auto
+    padding: 0
+    position: relative
+    display: inline-block
+  li
+    padding: 0 15px
+    list-style-type: none
+    float: left
+  a
+    text-decoration: none
+    color: #4d4d4d
+
+.menu-link
+  display: none
+
+.bars
+  height: 14px
+  width: 22px
+  padding-right: 15px
+
+.brand
+  padding-bottom: 10px
+
+.navbar a.icons-top
+  position: absolute
+  left: 40px
+  top: 27px
+  height: 17px
+  width: 24px
+  background-size: 24px
+  text-indent: -9999px
+div .navbar a.lang
+  position: absolute
+  top: 0
+  right: 40px
+
+.next-section
+  position: absolute
+  left: 50%
+  bottom: 59px
+  height: 17px
+  width: 24px
+  text-indent: -9999px
+  background-size: 24px
+
+.section
+  position: relative
+  padding: 70px 0 130px
+
+.background
+  background: image_url('ci/background.png') left top repeat
+
+.welcome
+  position: relative
+  background: image_url('ci/montage.jpg') left top repeat
+  background-size: auto 100%
+  background-position: 0 0
+  padding: 80px 0
+  height: 380px
+  +transition(background-position 3000s linear)
+
+  h1
+    padding: 15px 0
+    font-size: 50px
+  img
+    margin: 0 auto
+    display: block
+.claim-main
+  text-align: center
+#bosw
+  padding: 0
+
+a.bosw
+  position: absolute
+  bottom: 10px
+  right: 10px
+  display: inline-block
+  *display: inline
+  *zoom: 1
+  width: 100px
+  height: 100px
+  background: image_url('sponsorings/bosw.jpg') no-repeat
+  background-size: auto 100%
+
+.frontend-conf
+  a
+    font-size: 20px
+    display: block
+    text-decoration: none
+    color: #666
+    padding: 22px 0 30px
+    &:hover
+      color: #000
+    img
+      padding: 10px 10px 0
+      margin: -23px 0
+
+.team-member
+  font-family: 'Open Sans', sans-serif
+  position: relative
+  text-align: left
+  display: inline-block
+  vertical-align: top
+  margin-bottom: 30px
+  padding: 0 1.31%
+  width: 190px
+  img
+    max-height: 200px
+    margin: auto
+    display: block
+
+.member-name
+  padding-top: 10px
+  font-size: 1.2em
+  font-weight: bold
+
+.member-role
+  font-size: 1em
+  padding-bottom: 10px
+
+.member-social a
+  display: inline-block
+  width: 20px
+  height: 20px
+  text-indent: -9999px
+
+.info
+  position: relative
+  display: inline-block
+  vertical-align: top
+  margin-bottom: 30px
+  padding: 0 1.31%
+  width: 395px
+  p
+    font-family: 'Open Sans', sans-serif
+    font-size: 16pt
+
+.control
+  width: 5%
+
+.cycle-slideshow
+  height: 580px
+
+.slider
+  margin: 0 5%
+  width: 90%
+  padding-top: 15px
+
+.slider-img
+  padding-right: 2%
+  img
+    width: 48%
+    float: left
+    box-shadow: 0 0 15px #666
+    margin-top: 15px
+  .rounded
+    +border-radius(4%)
+.slider-text
+  width: 46%
+  text-align: left
+  vertical-align: top
+  float: left
+  padding-left: 4%
+  h4
+    font-size: 16pt
+  p
+    font-family: 'Open Sans', sans-serif
+    font-size: 16pt
+
+.slider-prev, .slider-next
+  position: absolute
+  top: 50%
+  height: 24px
+  width: 17px
+  text-indent: -9999px
+  z-index: 500
+
+.slider-prev
+  left: 0
+
+.slider-next
+  right: 0
+
+.slider-container
+  display: inline-block
+  height: 100%
+  width: 100%
+
+.border-radius
+  +border-radius(4%)
+
+.cycle-slideshow
+  width: 100%
+
+.customer-item
+  position: relative
+  display: inline-block
+  margin-bottom: 30px
+  padding: 0 1.31%
+  width: 200px
+
+.customer-img
+  line-height: 120px
+  height: 120px
+  img
+    display: inline-block
+    max-height: 120px
+    max-width: 160px
+    width: 120px
+    vertical-align: middle
+
+.address
+  h4
+    font-family: 'Open Sans', sans-serif
+    font-size: 1.4em
+    font-weight: bold
+    color: #666
+  width: 275px
+  display: inline-block
+  vertical-align: top
+  padding: 0 20px 40px 20px
+  font-family: 'Open Sans', sans-serif
+  font-size: 16px
+  font-weight: 300
+  line-height: 26px
+  color: #666
+  float: left
+
+.map
+  x-width: 100%
+  min-width: 60%
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+.last
+  padding: 30px 0
+
+.last-background
+  padding-bottom: 90px
+
+.wrapper
+  width: 100%
+  margin: 0 auto 10px auto
+  text-align: left
+
+label
+  float: none
+  clear: both
+  display: block
+  width: auto
+  margin-top: 8px
+  text-align: left
+  font-weight: bold
+  position: relative
+
+.field-group
+  float: none
+  margin: 3px 0 15px 0
+  padding: 5px
+  border-style: solid
+  +background-image(linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 100%))
+  background-color: #ffffff
+  border-color: #cccccc
+  border-width: 1px
+  input
+    display: block
+    margin: 0
+    padding: 5px
+    border: 0
+    background: none
+    width: 98%
+
+label
+  font-family: 'Open Sans', sans-serif
+  .asterisk
+    position: absolute
+    top: 36px
+    right: 10px
+    font-size: 30px
+
+select
+  width: 100px
+  margin: 5px
+
+.button
+  display: inline-block
+  font-family: 'Helvetica', Arial, sans-serif
+  width: auto
+  white-space: nowrap
+  height: 32px
+  margin: 5px 5px 0 0
+  padding: 0 22px
+  text-decoration: none
+  text-align: center
+  font-weight: bold
+  font-style: normal
+  font-size: 15px
+  line-height: 32px
+  cursor: pointer
+  border: 0
+  +border-radius(4px)
+  vertical-align: top
+  &:link, &:active, &:visited
+    background-color: #d6d6d6
+    color: #000000
+  background-color: #d6d6d6
+  color: #000000
+  &:hover
+    background-color: #cccccc
+    color: #000000
+
+.asterisk
+  color: #cc6600
+
+@media (max-width: 1313px)
+  .welcome
+    background-position: left top
+
+@media (max-width: 970px)
+  .stroke
+    display: none
+  .slogan
+    display: block
+    text-align: center
+  .brand
+    margin: 0 auto
+
+@media (max-width: 1030px)
+  div .navbar a.lang
+    right: 0
+    padding: 0 26px
+  .navbar
+    ul
+      display: none
+      background-color: #fff
+      box-shadow: 0 2px 5px #EEE
+    li
+      border-top: 1px solid #666
+      float: none
+      display: block
+    a
+      display: block
+      &.icons-top, &.lang
+        display: block
+      &.icons-top
+        padding: 26px
+        top: 0
+        left: 0
+      &.back-to-top
+        top: 20px
+        left: 26px
+        padding: 0 !important
+  .menu-link
+    display: block
+  .active
+    display: block !important
+  .address
+    float: none
+  .welcome
+    height: 520px
+    background-size: auto 100%
+
+@media (max-width: 930px)
+  .welcome
+    background-position: left top
+
+@media (max-width: 840px)
+  .cycle-slideshow
+    height: 1040px
+  .slider-img
+    max-width: 715px
+    padding-bottom: 30px
+    padding-right: 0
+    img
+      float: none
+      width: 100%
+  .slider-text
+    width: 100%
+    text-align: center
+    float: none
+    padding-left: 0
+
+@media (max-width: 780px)
+  .frontend-conf
+    a
+      padding: 0
+      .conf
+        margin: 0 auto
+      img
+        display: block
+        padding: 0
+        margin: 0
+@media (max-width: 640px)
+  body
+    overflow-x: hidden
+    padding-top: 55px
+  .navbar
+    line-height: 60px
+    height: 60px
+    a.icons-top
+      padding: 22px 26px
+
+  .welcome
+    height: 323px
+    h1
+      font-size: 35px
+    img
+      max-width: 100%
+    a.bosw
+      width: 241px
+      height: 200px
+  h2
+    font-size: 25px
+  p
+    font-size: 17px
+  .smaller
+    font-size: 12px
+  h4
+    font-size: 20px
+  p
+    font-size: 17px
+  .info
+    width: 97%
+    p
+      font-size: 15px
+  .slider-text p
+    font-size: 15px
+  .customer-item
+    width: 49%
+    margin: 0
+    padding: 0

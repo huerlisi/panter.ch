@@ -1,0 +1,184 @@
+- family_name: "Kontoleon"
+  given_name: "Georgios"
+  image: "employees/georgios-kontoleon.png"
+  partner: true
+  job_titles:
+    - "Business Development"
+    - "Project Management"
+  links:
+    - linkedin: "http://www.linkedin.com/pub/georgios-kontoleon/8/4b6/62a"
+    - xing: "https://www.xing.com/profile/Georgios_Kontoleon"
+
+- family_name: "Mächler"
+  given_name: "Martin"
+  image: "employees/martin-maechler.png"
+  partner: true
+  job_titles:
+    - "Sales"
+    - "Project Management"
+  links:
+    - linkedin: "http://www.linkedin.com/in/martinmachler"
+
+- family_name: "Seeliger"
+  given_name: "Beat"
+  image: "employees/beat-seeliger.png"
+  partner: true
+  job_titles:
+    - "Software Engineer"
+    - "Teacher"
+  links:
+    - linkedin: "http://ch.linkedin.com/in/seeliger"
+    - github: "https://github.com/panter"
+
+- family_name: "Schmidt"
+  given_name: "Falko"
+  image: "employees/falko-schmidt.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - xing: "https://www.xing.com/profile/Falko_Schmidt6?sc_o=mxb_p"
+    - github: "https://github.com/kaethorn"
+    - blog: "http://blog.alphagemini.org/"
+
+- family_name: "König"
+  given_name: "Andreas"
+  image: "employees/andreas-koenig.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+
+- family_name: "De Masi"
+  given_name: "Adi"
+  image: "employees/adi-de-masi.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://www.linkedin.com/pub/adi-de-masi/19/b75/859"
+    - xing: "https://www.xing.com/profile/Adi_DeMasi"
+    - github: "https://github.com/adi-de-masi"
+
+- family_name: "Reigel"
+  given_name: "Alexis"
+  image: "employees/alexis-reigel.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - github: "https://github.com/koffeinfrei"
+    - blog: "http://www.koffeinfrei.org/"
+
+- family_name: "Staub"
+  given_name: "Andi"
+  image: "employees/andi-staub.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - github: "https://github.com/kitsane"
+
+- family_name: "Hürlimann"
+  given_name: "Simon"
+  image: "employees/simon-huerlimann.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://www.linkedin.com/in/huerlisi"
+    - xing: "https://www.xing.com/profile/Simon_Huerlimann3"
+    - github: "https://github.com/huerlisi"
+
+- family_name: "Hilbe"
+  given_name: "Marcus"
+  image: "employees/marcus-hilbe.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+
+- family_name: "Häussermann"
+  given_name: "Immanuel"
+  image: "employees/immanuel-haeussermann.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+
+- family_name: "Brönnimann"
+  given_name: "Andreas"
+  image: "employees/andreas-broennimann.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+
+- family_name: "Oliveira"
+  given_name: "Zé"
+  image: "employees/ze-oliveira.png"
+  partner: false
+  job_titles:
+    - "Frontend Engineer"
+  links:
+    - blog: "http://zeoliveira.com/"
+
+- family_name: "Trolese"
+  given_name: "Flavio"
+  image: "employees/flavio-trolese.png"
+  partner: false
+  job_titles:
+    - "Project Management"
+  links:
+    - linkedin: "http://www.linkedin.com/pub/flavio-trolese/6/a2b/836"
+    - xing: "https://www.xing.com/profile/Flavio_Trolese"
+
+- family_name: "Benz"
+  given_name: "Samuel"
+  image: "employees/samuel-benz.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://www.linkedin.com/in/sambenz"
+    - github: "https://github.com/sambenz"
+
+- family_name: "Schottelius"
+  given_name: "Nico"
+  image: "employees/nico-schottelius.png"
+  partner: false
+  job_titles:
+    - "System Administrator"
+  links:
+    - linkedin: http://ch.linkedin.com/pub/nico-schottelius/27/98/30/
+    - github: "https://github.com/telmich"
+    - blog: "http://www.nico.schottelius.org/blog/"
+
+- family_name: "Kurennyy"
+  given_name: "Eugene"
+  image: "employees/eugene-kurenyy.png"
+  partner: false
+  job_titles:
+    - "Frontend Engineer"
+  links:
+    - linkedin: "http://www.linkedin.com/pub/eugene-kurennyy/32/a6/926"
+    - github: "https://github.com/ekurennyy"
+    - blog: "http://kurennyy.blogspot.com/"
+
+- family_name: "Frei"
+  given_name: "Daniel"
+  image: "employees/daniel-frei.png"
+  partner: false
+  job_titles:
+    - "Community Management"
+    - "Communication"
+  links:
+    - linkedin: "http://www.linkedin.com/in/dafrei/en"
+    - blog: "http://danielfrei.ch/zirkular"
+
+- family_name: "Gullà"
+  given_name: "Roberto"
+  image: "employees/roberto-gulla.png"
+  partner: false
+  job_titles:
+    - "Human Resources"
+    - "Admin"
+    - "Finance"
+  links:
+    - linkedin: "http://ch.linkedin.com/in/robertogulla"

@@ -1,0 +1,278 @@
+%div{ itemscope: '', itemtype: 'http://schema.org/Organization' }
+  .navbar
+    %a.icons-top.back-to-top{ href: '#top' } Go to top
+    %a.menu-link{ href: '#' }
+      = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars', resize_to: '22x'
+      MENU
+    %ul#menu
+      %li
+        %a{ href: '#company' } ORGANISATION
+      %li
+        %a{ href: '#team' } TEAM
+      %li
+        %a{ href: '#services' } DIENSTLEISTUNGEN
+      %li
+        %a{ href: '#customers'} KUNDEN
+      %li
+        %a{ href: '#contact'} KONTAKT
+      %li
+        %a{ href: '#contact'} COLAB
+      %li
+        %a{ href: '#newsletter'} NEWSLETTER
+    %a.lang{ href: "#{other_lang(langs, lang) }/index.html"}
+      = other_lang(langs, lang).upcase
+
+  .section.welcome
+    .container_12
+      .grid_12
+        %h1.header
+          = image_tag 'ci/logo_invert.png', class: 'brand', alt: 'Panter AG Logo', resize_to: '480x', itemprop: 'logo'
+          .claim-main
+            %span.slogan Menschen
+            %span.stroke –
+            %span.slogan Technologien
+            %span.stroke –
+            %span.slogan Vorteile
+  #bosw.section
+    .container_12
+      .grid_12
+        %a.bosw{ href: 'recomy-best-of-swiss-web-2014.html' }
+  .frontend-conf
+    .container_12
+      .grid_12
+        %a{ href: 'frontendconf.ch/' }
+          “Design meets Technology: Panter unterstützt
+          = image_tag 'sponsorings/logo-frontend-conf.png', class: 'conf', alt: ' Front End Conf 2014', resize_to: '200x'
+          2014.”
+  #company.section.background
+    .container_12
+      .grid_12
+        %h2 Organisation
+        %div{ itemprop: 'description' }
+          %p
+            %strong “Wir entwickeln, betreiben und skalieren
+            Ihre unternehmenskritischen Web- und mobilen Applikationen mit sicherer Hand, langfristig und effektiv.”
+          %p
+            %strong “Unsere Arbeit orientiert sich ausschliesslich an Resultaten:
+            Wir bedienen uns dazu agilen Entwicklungsmethoden und Cloud-basierten Technologien und behalten Ihren Nutzen stets im Fokus.”
+          %p
+            %strong “Unser Wunsch, Sie zufrieden zu stellen,
+            treibt uns zu Spitzenleistungen an: Wir bieten überdurchschnittliche Qualität und identifizieren uns mit Ihnen und Ihrem Projekt.”
+          %p.smaller
+            Unser Hauptsitz ist in Zürich. Wir unterhalten eine Niederlassung in Zug
+          %p.smaller
+            Unsere 2007 gegründete Organisation ist Inhaber-, Community- und Technologie-getrieben, lebt partizipative Strukturen und wächst langsam und stetig:  Zur Zeit  zählen wir #{data.employees.count} Mitarbeiter.
+    %a.next-section.icons-top{ href: '#top' } Team
+  #team.section
+    .container_12
+      .grid_12
+        %h2 Team
+        %p
+          Sie werden uns und unsere Arbeit schätzen: Wir verstehen und sehen uns als Handwerker erster Güte. Wir arbeiten hart dafür, dass Ihre Lösung perfekt wird. Das versprechen wir Ihnen.
+      .grid_12
+        - data.employees.each.with_index do |employee, index|
+          - if data.employees.count{ |e| e.partner? } == index
+            .grid_12
+          .team-member
+            - if employee.partner?
+              %div{ itemprop: 'founder', itemscope: '', itemtype: 'http://schema.org/Person' }
+            - else
+              %div{ itemprop: 'employee', itemscope: '', itemtype: 'http://schema.org/Person' }
+            = image_tag employee.image, alt: employee.name, title: employee.name, itemprop: 'image', resize_to: '185x'
+            .member-name
+              %span{ itemprop: 'givenName' }
+                = employee.given_name
+              %span{ itemprop: 'familyName' }
+                = employee.family_name
+            .member-role
+              - if employee.partner?
+                %span{ itemprop: 'jobTitle' }
+                  Partner
+                %br
+              - employee.job_titles.each do |job_title|
+                %span{ itemprop: 'jobTitle' }
+                  = job_title
+                %br
+            .member-social
+              - if employee.links?
+                - employee.links.each do |link|
+                  %a{ href: link.values.first, itemprop: 'sameAs', target: '_blank', class: "icons-#{link.keys.first}" }
+                    #{link.keys.first} profile of #{employee.given_name} #{employee.family_name}
+    %a.next-section.icons-top{ href: '#top' } Services
+  #services.section.background
+    .container_12
+      .grid_12
+        %h2 Dienstleistungen
+        %p
+          Wir sind Profis in Ruby on Rails, Java & JEE, HTML5, CSS3, Javascript Frameworks wie JQuery, Backbone und Spine, um nur einige zu nennen.
+        %p
+          Unsere Arbeit orientiert sich am Nutzer und ist testgetrieben.
+        %p
+          Unsere Lösungen funktionieren in der Cloud, auf Ihrer dedizierten Umgebung und auf Ihrer eigenen Infrastruktur.
+      .grid_12
+        .info{ itemprop: 'makesOffer', itemscope: '', itemtype: 'http://schema.org/Offer' }
+          %h4{ itemprop: 'name' } Web- und mobile Applikationen für Ihre Kunden
+          %p{ itemprop: 'description' }
+            Unsere Auftraggeberinnen und Auftraggeber sind erfolgreiche Unternehmen, ausgewiesene Spezialisten in Ihren Geschäftsfeldern, die Prozesse, Serviceleistungen und Angebote ins Internet verlagern. Dies verlangt ebenso ausgewiesene Spezialisten im Hintergrund, die für Sicherheit in den Abläufen und der Entwicklung sorgen. Arbeiten sie mit uns, zeigen Sie uns Ihre Vision und wir realisieren Ihre Idee.
+        .info{ itemprop: 'makesOffer', itemscope: '', itemtype: 'http://schema.org/Offer' }
+          %h4{ itemprop: 'name' } Enterprise-Applikationen für Ihr Geschäft
+          %p{ itemprop: 'description' }
+            Wir entwickeln Applikationen, die Einsatz finden in Unternehmen rund um den Globus. Einige davon optimieren und automatisieren Arbeitsprozesse, einige davon sichern die Prozessqualität, andere wiederum vereinfachen Ihnen und Ihrem Team ganz einfach das Leben.
+        .info{ itemprop: 'makesOffer', itemscope: '', itemtype: 'http://schema.org/Offer' }
+          %h4{ itemprop: 'name' } Web-Applikationen, optimiert für das mobile Zeitalter
+          %p{ itemprop: 'description' }
+            Immer mehr Nutzerinnen und Nutzer gelangen via Smart-Phone und Tablet auf Ihre Applikation. Dies stellt ganz neue Anforderungen an Design und Benutzerführung. Mit unseren für das mobile Zeitalter optimierten Applikationen befriedigen Sie alle Wünsche Ihrer Nutzerinnen und Nutzer, egal mit welchem Betriebssystem oder Gerät sie auf Ihr Angebot zugreifen.
+        .info{ itemprop: 'makesOffer', itemscope: '', itemtype: 'http://schema.org/Offer' }
+          %h4{ itemprop: 'name' }
+            Beratung:
+            %br
+            Auf Aufgenhöhe und hands-on
+          %p{ itemprop: 'description' }
+            Sie wollen ein internes Projekt beschleunigen? Wir helfen Ihnen. Buchen Sie einen unserer Entwickler oder eines unserer Teams für einen Tag, eine Woche oder länger: Wir verfügen über erfahrene SCRUM-Master, Projekt-Manager, Anforderungsanalytiker, Software-Architekten, Programmierer, Unternehmens- und Marketing-Berater. Kontaktieren Sie uns für ein unverbindliches Gespräch.
+      .grid_12
+        %p
+          Unser agiler Entwicklungsprozess ist einfach, effektiv und kundenzentriert:
+        %p
+          %strong Wir hören zu, setzen um, wiederholen.
+        %p
+          Wir sind schnell, geben rasch Feedback, kommunizieren häufig und transparent.
+    %a.next-section.icons-top{ href: '#top' } Customers
+  #customers.section
+    .container_12
+      .grid_12
+        %h2 Kunden
+        %p
+          Wir haben ausgewiesene und langjährige Erfahrung in der Umsetzung von grossen Enterprise-Applikationen, Startup-Prototypen und stabilen und sicheren Web-Applikationen.
+        %p
+          Hier eine Auswahl aktueller Arbeiten:
+        .grid_12
+          .slider-container
+            .control
+              %a#prev.slider-control.slider-prev.icons-left{ href: '' } Previous
+            .cycle-slideshow{ data: { 'cycle-auto-height' => 'calc', 'cycle-fx' => 'scrollHorz', 'cycle-next' => '#next', 'cycle-pause-on-hover' => 'true', 'cycle-prev' => '#prev', 'cycle-slides' => '.slider', 'cycle-timeout' => '4000', 'speed' => '800'} }
+              - data.references.each do |reference|
+                .slider
+                  .slider-img
+                    = image_tag reference.image, alt: "#{reference.name} #{reference.title}", title: reference.name, class: ('rounded' if reference.rounded == true), resize_to: '715x'
+                  .slider-text
+                    %h4
+                      = reference.name
+                      %br
+                      = reference.title
+                    %p
+                      = reference.text
+                      %br
+                      - if reference.url_text?
+                        %br
+                        = link_to reference.url_text, reference.url
+                      - else
+                        %br
+                        = link_to reference.url, reference.url
+            .control
+              %a#next.slider-control.slider-next.icons-right{ href: '' } Next
+        %p
+          Auch die Integration von Systemen wie Google Apps / Drive, Facebook, Twitter, Paypal und anderer E-Commerce-Gateways meistern wir problemlos.
+        %p
+          Ob wir Ihre individuelle Lösung von A-Z entwickeln oder Teile davon, ob Sie uns als Troubleshooter für ein bestehendes Projekt engagieren oder als Starthilfe für ein neues:
+        %p
+          Unsere strukturierten und klaren Prozesse machen es einfach, mit uns zu arbeiten.
+      .grid_12
+        - data.customers.each do |customer|
+          .customer-item
+            .customer-img
+              = image_tag customer.image, alt: customer.name, title: customer.name, resize_to: '120x'
+    %a.next-section.icons-top{ href: '#top' } Contact
+  #contact.section.background
+    .container_12
+      .grid_12
+        %h2 Kontakt
+      .grid_12.last
+        .address
+          %h4
+            Hauptstandort
+            %br
+            Zürich (CH)
+          %span{ itemprop: 'name' } Panter AG
+          %br
+          %div{ itemprop: 'location', itemscope: '', itemtype: 'http://schema.org/PostalAddress' }
+            %a{ href: 'http://colab-zurich.ch', target: '_blank' } Colab Zürich
+            %br
+            %span{ itemprop: 'streetAddress' } Zentralstrasse 37
+            %br
+            = succeed '-' do
+              %span{ itemprop: 'addressCountry' } CH
+            %span{ itemprop: 'postalCode' } 8003
+            %span{ itemprop: 'addressLocality' } Zürich
+            %br
+          %a{ href: 'mailto:info@panter.ch' }
+            %span{ itemprop: 'email' } info@panter.ch
+          %br
+          %a{ href: 'tel:41445002904' }
+            %span{ itemprop: 'telephone' } +41 44 500 29 04
+          %br
+          %br
+          .member-social
+            %a.icons-linkedin{ href: 'http://www.linkedin.com/company/3105750?trk=vsrp_companies_res_name&amp;trkInfo=VSRPsearchId%3A1004249921383740324861%2CVSRPtargetId%3A3105750%2CVSRPcmpt%3Aprimary', itemprop: 'sameAs', target: '_blank' } LinkedIn Profil von Panter
+            %a.icons-twitter{ href: 'https://twitter.com/panterch', itemprop: 'sameAs', target: '_blank' } Twitter Profil von Panter
+            %a.icons-facebook{ href: 'https://www.facebook.com/panterch', itemprop: 'sameAs', target: '_blank' } Facebook Profil von Panter
+            %a.icons-google-plus{ href: 'https://plus.google.com/u/0/106584890222764921609/posts', itemprop: 'sameAs', target: '_blank' } Google Plus Profil von Panter
+            %a.icons-github{ href: 'https://github.com/panter', itemprop: 'sameAs', target: '_blank' } Github Repository von Panter
+          %br
+            %a{ href: 'https://www.google.ch/maps/place/Dorfstrasse+17,+6300+Zug/@47.1654701,8.5175845,17z/data=!3m1!4b1!4m2!3m1!1s0x479aaafa152a8971:0xa03fa23479f50376', target: '_blank' } Zweigstelle in Zug
+        .map
+          %a.github{ href: 'https://www.google.ch/maps/place/Panter+AG/@47.371564,8.5196,17z/data=!3m1!4b1!4m2!3m1!1s0x47900a195504b4bf:0xcee1c98d7598c2c', itemprop: 'sameAs', target: '_blank' }
+            = image_tag 'https://maps.google.com/maps/api/staticmap?center=47.3715092,8.5195037&zoom=16&size=620x400&maptype=roadmap&sensor=false&language=&markers=color:red|label:true|47.3715092,8.5195037'
+    %a.next-section.icons-top{ href: '#top' } Top
+  #newsletter.section.last-background
+    .container_12
+      .grid_12
+        %h2 Newsletter
+        #templateContainer.wrapper.rounded6
+          #templateBody.bodyContent.rounded6
+            %form{ action: 'http://panter.us4.list-manage1.com/subscribe/post', method: 'POST' }
+              %input{ name: 'u', type: 'hidden', value: '4fd63bcc6266c4664a55fadaa' }
+              %input{ name: 'id', type: 'hidden', value: '7e6e525063' }
+              #mergeTable.mergeTable
+                #mergeRow-3.mergeRow.dojoDndItem.mergeRow-dropdown
+                  %label{ for: 'MERGE3' }
+                    %strong Anrede
+                    %span.asterisk *
+                  .field-group
+                    %select#MERGE3{ name: 'MERGE3' }
+                      %option{ value: 'Frau' } Frau
+                      %option{ value: 'Herr' } Herr
+                #mergeRow-1.mergeRow.dojoDndItem.mergeRow-text
+                  %label{ for: 'MERGE1' }
+                    %strong Vorname
+                    %span.asterisk *
+                  .field-group
+                    %input#MERGE1{ name: 'MERGE1', size: '25', type: 'text', value: '' }
+                #mergeRow-2.mergeRow.dojoDndItem.mergeRow-text
+                  %label{ for: 'MERGE2' }
+                    %strong Nachname
+                    %span.asterisk *
+                  .field-group
+                    %input#MERGE2{ name: 'MERGE2', size: '25', type: 'text', value: '' }
+                #mergeRow-0.mergeRow.dojoDndItem.mergeRow-email
+                  %label{ for: 'MERGE0' }
+                    %strong E-Mail Adresse
+                    %span.asterisk *
+                  .field-group
+                    %input#MERGE0{ name: 'MERGE0', size: '25', type: 'email', value: '' }
+                #mergeRow-4.mergeRow.dojoDndItem.mergeRow-text
+                  %label{ for: 'MERGE4' } Bemerkung
+                  .field-group
+                    %input#MERGE4{ name: 'MERGE4', size: '25', type: 'text', value: '' }
+              .submit_container
+                %input.button{ name: 'submit', type: 'submit', value: 'Abschicken' }
+    %a.next-section.icons-top{ href: '#top' } Top
+:javascript
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40536002-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
