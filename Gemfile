@@ -7,8 +7,6 @@ gem 'middleman-livereload', '~> 3.1.0'
 
 gem 'middleman-favicon-maker', '~> 3.7'
 
-gem 'middleman-simple-thumbnailer'
-
 gem 'middleman-imageoptim', '~> 0.1.4'
 
 gem 'haml'

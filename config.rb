@@ -66,9 +66,6 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 
-  # Enable cache buster
-  activate :asset_hash
-
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source', 'img', 'favicon')
     f.icons = {
@@ -78,11 +75,14 @@ configure :build do
       ]
     }
   end
-  #
+
   # Use relative URLs
-  activate :relative_assets
+  # activate :relative_assets
 
   activate :imageoptim
+
+  # Enable cache buster
+  #activate :asset_hash
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

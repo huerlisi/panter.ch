@@ -2,7 +2,7 @@
   .navbar
     %a.icons-top.back-to-top{ href: '#top' } Go to top
     %a.menu-link{ href: '#' }
-      = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars', resize_to: '22x'
+      = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars'
       MENU
     %ul#menu
       %li
@@ -23,7 +23,21 @@
   .section.welcome
     .container_12
       .grid_12
-        = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo', resize_to: '600x', itemprop: 'logo'
+        = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo', itemprop: 'logo'
+  .container_12
+    .grid_12
+      .sponsorings
+        %a{ href: 'recomy-best-of-swiss-web-2014.html', target: '_blank' }
+          = image_tag 'sponsorings/bosw.jpg', alt: 'Best of Swiss Web Awards'
+          %span Winner #BOSW
+      .sponsorings
+        %a{ href: 'http://colab-zurich.ch', target: '_blank' }
+          = image_tag 'sponsorings/colab_bunny.png', class: 'conf', alt: 'Colab'
+          %span Co-founder #ColabZurich
+      .sponsorings
+        %a{ href: 'http://frontendconf.ch/', target: '_blank' }
+          = image_tag 'sponsorings/frontend-conference-zurich.png', class: 'conf', alt: ' Front End Conf 2014'
+          %span Supporter #FEC14
   #company.section.background
     .container_12
       .grid_12
@@ -51,16 +65,15 @@
         %h2 Team
         %p
           You'll love us. We're personable craftsmen, passionate and approachable. We work hard until your software is perfect.
+    .container_9
       .grid_12
-        - data.employees.each.with_index do |employee, index|
-          - if data.employees.count{ |e| e.partner? } == index
-            .grid_12
+        - data.employees.each do |employee|
           .team-member
             - if employee.partner?
               %div{ itemprop: 'founder', itemscope: '', itemtype: 'http://schema.org/Person' }
             - else
               %div{ itemprop: 'employee', itemscope: '', itemtype: 'http://schema.org/Person' }
-            = image_tag employee.image, alt: employee.name, title: employee.name, itemprop: 'image', resize_to: '185x'
+            = image_tag employee.image, alt: employee.name, title: employee.name, itemprop: 'image'
             .member-name
               %span{ itemprop: 'givenName' }
                 = employee.given_name
@@ -139,7 +152,7 @@
         - data.customers.each do |customer|
           .customer-item
             .customer-img
-              = image_tag customer.image, alt: customer.name, title: customer.name, resize_to: '120x'
+              = image_tag customer.image, alt: customer.name, title: customer.name
     %a.next-section.icons-top{ href: '#top' } Contact
   #contact.section.background
     .container_12

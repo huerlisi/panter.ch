@@ -2,7 +2,7 @@
   .navbar
     %a.icons-top.back-to-top{ href: '#top' } Go to top
     %a.menu-link{ href: '#' }
-      = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars', resize_to: '22x'
+      = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars'
       MENU
     %ul#menu
       %li
@@ -25,20 +25,20 @@
   .section.welcome
     .container_12
       .grid_12
-        = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo', resize_to: '600x', itemprop: 'logo'
+        = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo', itemprop: 'logo'
   .container_12
     .grid_12
       .sponsorings
-        %a{ href: 'recomy-best-of-swiss-web-2014.html' }
-          = image_tag 'sponsorings/bosw.jpg', alt: 'Best of Swiss Web Awards', resize_to: '50x'
+        %a{ href: 'recomy-best-of-swiss-web-2014.html', target: '_blank' }
+          = image_tag 'sponsorings/bosw.jpg', alt: 'Best of Swiss Web Awards'
           %span Gewinnerin #BOSW
       .sponsorings
-        %a{ href: 'frontendconf.ch/' }
-          = image_tag 'sponsorings/colab_bunny.png', class: 'conf', alt: 'Colab', resize_to: '50x'
+        %a{ href: 'http://colab-zurich.ch', target: '_blank' }
+          = image_tag 'sponsorings/colab_bunny.png', class: 'conf', alt: 'Colab'
           %span Mitinitiantin #ColabZurich
       .sponsorings
-        %a{ href: 'frontendconf.ch/' }
-          = image_tag 'sponsorings/frontend-conference-zurich.png', class: 'conf', alt: ' Front End Conf 2014', resize_to: '50x'
+        %a{ href: 'http://frontendconf.ch/', target: '_blank' }
+          = image_tag 'sponsorings/frontend-conference-zurich.png', class: 'conf', alt: ' Front End Conf 2014'
           %span Supporterin #FEC14
   #company.section.background
     .container_12
@@ -75,7 +75,7 @@
               %div{ itemprop: 'founder', itemscope: '', itemtype: 'http://schema.org/Person' }
             - else
               %div{ itemprop: 'employee', itemscope: '', itemtype: 'http://schema.org/Person' }
-            = image_tag employee.image, alt: employee.name, title: employee.name, itemprop: 'image', resize_to: '185x'
+            = image_tag employee.image, alt: employee.name, title: employee.name, itemprop: 'image'
             .member-name
               %span{ itemprop: 'givenName' }
                 = employee.given_name
@@ -150,7 +150,7 @@
               - data.references.each do |reference|
                 .slider
                   .slider-img
-                    = image_tag reference.image, alt: "#{reference.name} #{reference.title}", title: reference.name, class: ('rounded' if reference.rounded == true), resize_to: '715x'
+                    = image_tag reference.image, alt: "#{reference.name} #{reference.title}", title: reference.name, class: ('rounded' if reference.rounded == true)
                   .slider-text
                     %h4
                       = reference.name
@@ -177,7 +177,7 @@
         - data.customers.each do |customer|
           .customer-item
             .customer-img
-              = image_tag customer.image, alt: customer.name, title: customer.name, resize_to: '120x'
+              = image_tag customer.image, alt: customer.name, title: customer.name
     %a.next-section.icons-top{ href: '#top' } Contact
   #contact.section.background
     .container_12
