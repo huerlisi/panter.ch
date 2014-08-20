@@ -136,33 +136,25 @@ div .navbar a.lang
     margin: 0 auto
     width: 100%
 
-#bosw
-  padding: 0
-
-a.bosw
-  position: absolute
-  bottom: 10px
-  right: 10px
+.sponsorings
+  font-family: 'Open Sans', sans-serif
+  position: relative
+  text-align: center
   display: inline-block
-  *display: inline
-  *zoom: 1
-  width: 100px
-  height: 100px
-  background: image_url('sponsorings/bosw.jpg') no-repeat
-  background-size: auto 100%
+  margin: 10px 0 5px
+  width: 33%
 
-.frontend-conf
   a
-    font-size: 20px
-    display: block
     text-decoration: none
-    color: #666
-    padding: 22px 0 30px
-    &:hover
-      color: #000
+
     img
-      padding: 10px 10px 0
-      margin: -23px 0
+      height: 50px
+
+    span
+      vertical-align: top
+      line-height: 50px
+      padding-left: 10px
+
 .team
   max-width: 70%
 
@@ -442,6 +434,10 @@ select
     float: none
     padding-left: 0
 
+@media (max-width: 805px)
+  .sponsorings
+    width: 100%
+
 @media (max-width: 780px)
   .frontend-conf
     a
@@ -462,9 +458,6 @@ select
     a.icons-top
       padding: 22px 26px
 
-    a.bosw
-      width: 241px
-      height: 200px
   h2
     font-size: 25px
   p

@@ -26,17 +26,20 @@
     .container_12
       .grid_12
         = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo', resize_to: '600x', itemprop: 'logo'
-  #bosw.section
-    .container_12
-      .grid_12
-        %a.bosw{ href: 'recomy-best-of-swiss-web-2014.html' }
-  .frontend-conf
-    .container_12
-      .grid_12
+  .container_12
+    .grid_12
+      .sponsorings
+        %a{ href: 'recomy-best-of-swiss-web-2014.html' }
+          = image_tag 'sponsorings/bosw.jpg', alt: 'Best of Swiss Web Awards', resize_to: '50x'
+          %span Gewinnerin #BOSW
+      .sponsorings
         %a{ href: 'frontendconf.ch/' }
-          “Design meets Technology: Panter unterstützt
-          = image_tag 'sponsorings/logo-frontend-conf.png', class: 'conf', alt: ' Front End Conf 2014', resize_to: '200x'
-          2014.”
+          = image_tag 'sponsorings/colab_bunny.png', class: 'conf', alt: 'Colab', resize_to: '50x'
+          %span Mitinitiantin #ColabZurich
+      .sponsorings
+        %a{ href: 'frontendconf.ch/' }
+          = image_tag 'sponsorings/frontend-conference-zurich.png', class: 'conf', alt: ' Front End Conf 2014', resize_to: '50x'
+          %span Supporterin #FEC14
   #company.section.background
     .container_12
       .grid_12
