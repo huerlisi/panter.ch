@@ -69,10 +69,9 @@
         %h2 Team
         %p
           Sie werden uns und unsere Arbeit schätzen: Wir verstehen und sehen uns als Handwerker erster Güte. Wir arbeiten hart dafür, dass Ihre Lösung perfekt wird. Das versprechen wir Ihnen.
+    .container_9
       .grid_12
-        - data.employees.each.with_index do |employee, index|
-          - if data.employees.count{ |e| e.partner? } == index
-            .grid_12
+        - data.employees.each do |employee|
           .team-member
             - if employee.partner?
               %div{ itemprop: 'founder', itemscope: '', itemtype: 'http://schema.org/Person' }
