@@ -161,10 +161,12 @@
                       %br
                       - if reference.url_text?
                         %br
-                        = link_to reference.url_text, reference.url
+                        %a{ href: "http://#{reference.url}" }
+                          = reference.url_text
                       - else
                         %br
-                        = link_to reference.url, reference.url
+                        %a{ href: "http://#{reference.url}" }
+                          = reference.url
             .control
               %a#next.slider-control.slider-next.icons-right{ href: '' } Next
         %p
