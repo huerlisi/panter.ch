@@ -30,9 +30,6 @@ body
   text-align: center
   padding-top: 70px
 
-.slogan
-  color: #000
-
 h1, h2, h4
   margin: 0
   padding: 0
@@ -95,9 +92,6 @@ a
   width: 22px
   padding-right: 15px
 
-.brand
-  padding-bottom: 10px
-
 .navbar a.icons-top
   position: absolute
   left: 40px
@@ -136,14 +130,12 @@ div .navbar a.lang
   height: 380px
   +transition(background-position 3000s linear)
 
-  h1
-    padding: 15px 0
-    font-size: 50px
   img
+    padding-top: 20px
+    max-width: 600px
     margin: 0 auto
-    display: block
-.claim-main
-  text-align: center
+    width: 100%
+
 #bosw
   padding: 0
 
@@ -396,15 +388,6 @@ select
   .welcome
     background-position: left top
 
-@media (max-width: 970px)
-  .stroke
-    display: none
-  .slogan
-    display: block
-    text-align: center
-  .brand
-    margin: 0 auto
-
 @media (max-width: 1030px)
   div .navbar a.lang
     right: 0
@@ -437,7 +420,6 @@ select
   .address
     float: none
   .welcome
-    height: 520px
     background-size: auto 100%
 
 @media (max-width: 930px)
@@ -480,12 +462,6 @@ select
     a.icons-top
       padding: 22px 26px
 
-  .welcome
-    height: 323px
-    h1
-      font-size: 35px
-    img
-      max-width: 100%
     a.bosw
       width: 241px
       height: 200px
