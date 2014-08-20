@@ -1,6 +1,6 @@
 - family_name: "Kontoleon"
   given_name: "Georgios"
-  image: "employees/georgios-kontoleon.png"
+  image: "employees/georgios-kontoleon.jpg"
   partner: true
   job_titles:
     - "Business Development"
@@ -11,7 +11,7 @@
 
 - family_name: "Mächler"
   given_name: "Martin"
-  image: "employees/martin-maechler.png"
+  image: "employees/martin-maechler.jpg"
   partner: true
   job_titles:
     - "Sales"
@@ -21,7 +21,7 @@
 
 - family_name: "Seeliger"
   given_name: "Beat"
-  image: "employees/beat-seeliger.png"
+  image: "employees/beat-seeliger.jpg"
   partner: true
   job_titles:
     - "Software Engineer"
@@ -32,7 +32,7 @@
 
 - family_name: "Schmidt"
   given_name: "Falko"
-  image: "employees/falko-schmidt.png"
+  image: "employees/falko-schmidt.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -43,14 +43,14 @@
 
 - family_name: "König"
   given_name: "Andreas"
-  image: "employees/andreas-koenig.png"
+  image: "employees/andreas-koenig.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
 
 - family_name: "De Masi"
   given_name: "Adi"
-  image: "employees/adi-de-masi.png"
+  image: "employees/adi-de-masi.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -61,7 +61,7 @@
 
 - family_name: "Reigel"
   given_name: "Alexis"
-  image: "employees/alexis-reigel.png"
+  image: "employees/alexis-reigel.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -71,7 +71,7 @@
 
 - family_name: "Staub"
   given_name: "Andi"
-  image: "employees/andi-staub.png"
+  image: "employees/andi-staub.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -80,7 +80,7 @@
 
 - family_name: "Hürlimann"
   given_name: "Simon"
-  image: "employees/simon-huerlimann.png"
+  image: "employees/simon-huerlimann.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -91,28 +91,28 @@
 
 - family_name: "Hilbe"
   given_name: "Marcus"
-  image: "employees/marcus-hilbe.png"
+  image: "employees/marcus-hilbe.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
 
 - family_name: "Häussermann"
   given_name: "Immanuel"
-  image: "employees/immanuel-haeussermann.png"
+  image: "employees/immanuel-haeussermann.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
 
 - family_name: "Brönnimann"
   given_name: "Andreas"
-  image: "employees/andreas-broennimann.png"
+  image: "employees/andreas-broennimann.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
 
 - family_name: "Oliveira"
   given_name: "Zé"
-  image: "employees/ze-oliveira.png"
+  image: "employees/ze-oliveira.jpg"
   partner: false
   job_titles:
     - "Frontend Engineer"
@@ -121,7 +121,7 @@
 
 - family_name: "Trolese"
   given_name: "Flavio"
-  image: "employees/flavio-trolese.png"
+  image: "employees/flavio-trolese.jpg"
   partner: false
   job_titles:
     - "Project Management"
@@ -131,7 +131,7 @@
 
 - family_name: "Benz"
   given_name: "Samuel"
-  image: "employees/samuel-benz.png"
+  image: "employees/samuel-benz.jpg"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -141,7 +141,7 @@
 
 - family_name: "Schottelius"
   given_name: "Nico"
-  image: "employees/nico-schottelius.png"
+  image: "employees/nico-schottelius.jpg"
   partner: false
   job_titles:
     - "System Administrator"
@@ -152,7 +152,7 @@
 
 - family_name: "Kurennyy"
   given_name: "Eugene"
-  image: "employees/eugene-kurenyy.png"
+  image: "employees/eugene-kurenyy.jpg"
   partner: false
   job_titles:
     - "Frontend Engineer"
@@ -163,7 +163,7 @@
 
 - family_name: "Frei"
   given_name: "Daniel"
-  image: "employees/daniel-frei.png"
+  image: "employees/daniel-frei.jpg"
   partner: false
   job_titles:
     - "Community Management"
@@ -174,7 +174,7 @@
 
 - family_name: "Gullà"
   given_name: "Roberto"
-  image: "employees/roberto-gulla.png"
+  image: "employees/roberto-gulla.jpg"
   partner: false
   job_titles:
     - "Human Resources"
