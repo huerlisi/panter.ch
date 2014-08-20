@@ -77,7 +77,7 @@ configure :build do
   end
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   activate :imageoptim
 
