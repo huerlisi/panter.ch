@@ -161,11 +161,11 @@
                       %br
                       - if reference.url_text?
                         %br
-                        %a{ href: "http://#{reference.url}" }
+                        %a{ href: "http://#{reference.url}", target: '_blank' }
                           = reference.url_text
                       - else
                         %br
-                        %a{ href: "http://#{reference.url}" }
+                        %a{ href: "http://#{reference.url}", target: '_blank' }
                           = reference.url
             .control
               %a#next.slider-control.slider-next.icons-right{ href: '' } Next
