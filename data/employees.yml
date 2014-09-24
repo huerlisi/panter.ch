@@ -40,117 +40,6 @@
     - linkedin: "https://www.linkedin.com/pub/daniel-isenegger/6/887/81a"
     - xing: "https://www.xing.com/profile/Daniel_Isenegger"
 
-- family_name: "Schmidt"
-  given_name: "Falko"
-  image: "employees/falko-schmidt.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - xing: "https://www.xing.com/profile/Falko_Schmidt6?sc_o=mxb_p"
-    - github: "https://github.com/kaethorn"
-    - blog: "http://blog.alphagemini.org/"
-
-- family_name: "König"
-  given_name: "Andreas"
-  image: "employees/andreas-koenig.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-
-- family_name: "De Masi"
-  given_name: "Adi"
-  image: "employees/adi-de-masi.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - linkedin: "http://www.linkedin.com/pub/adi-de-masi/19/b75/859"
-    - xing: "https://www.xing.com/profile/Adi_DeMasi"
-    - github: "https://github.com/adi-de-masi"
-
-- family_name: "Reigel"
-  given_name: "Alexis"
-  image: "employees/alexis-reigel.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - github: "https://github.com/koffeinfrei"
-    - blog: "http://www.koffeinfrei.org/"
-
-- family_name: "Staub"
-  given_name: "Andi"
-  image: "employees/andi-staub.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - github: "https://github.com/kitsane"
-
-- family_name: "Hürlimann"
-  given_name: "Simon"
-  image: "employees/simon-huerlimann.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - linkedin: "http://www.linkedin.com/in/huerlisi"
-    - xing: "https://www.xing.com/profile/Simon_Huerlimann3"
-    - github: "https://github.com/huerlisi"
-
-- family_name: "Hilbe"
-  given_name: "Marcus"
-  image: "employees/marcus-hilbe.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-
-- family_name: "Häussermann"
-  given_name: "Immanuel"
-  image: "employees/immanuel-haeussermann.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - github: "https://github.com/manufaktor"
-
-- family_name: "Brönnimann"
-  given_name: "Andreas"
-  image: "employees/andreas-broennimann.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-
-- family_name: "Koller"
-  given_name: "Markus"
-  image: "employees/markus-koller.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - linkedin: "https://www.linkedin.com/pub/markus-koller/9a/29a/8a0"
-    - github: "https://github.com/toupeira"
-
-- family_name: "Wettstein"
-  given_name: "Marco"
-  image: "employees/marco-wettstein.jpg"
-  partner: false
-  job_titles:
-    - "Software Engineer"
-  links:
-    - linkedin: "http://ch.linkedin.com/pub/marco-wettstein/8b/893/b1b"
-    - github: "https://github.com/macrozone"
-
-- family_name: "Oliveira"
-  given_name: "Zé"
-  image: "employees/ze-oliveira.jpg"
-  partner: false
-  job_titles:
-    - "Frontend Engineer"
-  links:
-    - blog: "http://zeoliveira.com/"
-
 - family_name: "Trolese"
   given_name: "Flavio"
   image: "employees/flavio-trolese.jpg"
@@ -171,16 +60,107 @@
     - linkedin: "http://www.linkedin.com/in/sambenz"
     - github: "https://github.com/sambenz"
 
-- family_name: "Schottelius"
-  given_name: "Nico"
-  image: "employees/nico-schottelius.jpg"
+- family_name: "Brönnimann"
+  given_name: "Andreas"
+  image: "employees/andreas-broennimann.jpg"
   partner: false
   job_titles:
-    - "System Administrator"
+    - "Software Engineer"
+
+- family_name: "De Masi"
+  given_name: "Adi"
+  image: "employees/adi-de-masi.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
   links:
-    - linkedin: http://ch.linkedin.com/pub/nico-schottelius/27/98/30/
-    - github: "https://github.com/telmich"
-    - blog: "http://www.nico.schottelius.org/blog/"
+    - linkedin: "http://www.linkedin.com/pub/adi-de-masi/19/b75/859"
+    - xing: "https://www.xing.com/profile/Adi_DeMasi"
+    - github: "https://github.com/adi-de-masi"
+
+- family_name: "Häussermann"
+  given_name: "Immanuel"
+  image: "employees/immanuel-haeussermann.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - github: "https://github.com/manufaktor"
+
+- family_name: "Hilbe"
+  given_name: "Marcus"
+  image: "employees/marcus-hilbe.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+
+- family_name: "Hürlimann"
+  given_name: "Simon"
+  image: "employees/simon-huerlimann.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://www.linkedin.com/in/huerlisi"
+    - xing: "https://www.xing.com/profile/Simon_Huerlimann3"
+    - github: "https://github.com/huerlisi"
+
+- family_name: "Koller"
+  given_name: "Markus"
+  image: "employees/markus-koller.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "https://www.linkedin.com/pub/markus-koller/9a/29a/8a0"
+    - github: "https://github.com/toupeira"
+
+- family_name: "König"
+  given_name: "Andreas"
+  image: "employees/andreas-koenig.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+
+- family_name: "Reigel"
+  given_name: "Alexis"
+  image: "employees/alexis-reigel.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - github: "https://github.com/koffeinfrei"
+    - blog: "http://www.koffeinfrei.org/"
+
+- family_name: "Schmidt"
+  given_name: "Falko"
+  image: "employees/falko-schmidt.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - xing: "https://www.xing.com/profile/Falko_Schmidt6?sc_o=mxb_p"
+    - github: "https://github.com/kaethorn"
+    - blog: "http://blog.alphagemini.org/"
+
+- family_name: "Staub"
+  given_name: "Andi"
+  image: "employees/andi-staub.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - github: "https://github.com/kitsane"
+
+- family_name: "Wettstein"
+  given_name: "Marco"
+  image: "employees/marco-wettstein.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://ch.linkedin.com/pub/marco-wettstein/8b/893/b1b"
+    - github: "https://github.com/macrozone"
 
 - family_name: "Kurennyy"
   given_name: "Eugene"
@@ -192,6 +172,26 @@
     - linkedin: "http://www.linkedin.com/pub/eugene-kurennyy/32/a6/926"
     - github: "https://github.com/ekurennyy"
     - blog: "http://kurennyy.blogspot.com/"
+
+- family_name: "Oliveira"
+  given_name: "Zé"
+  image: "employees/ze-oliveira.jpg"
+  partner: false
+  job_titles:
+    - "Frontend Engineer"
+  links:
+    - blog: "http://zeoliveira.com/"
+
+- family_name: "Schottelius"
+  given_name: "Nico"
+  image: "employees/nico-schottelius.jpg"
+  partner: false
+  job_titles:
+    - "System Administrator"
+  links:
+    - linkedin: http://ch.linkedin.com/pub/nico-schottelius/27/98/30/
+    - github: "https://github.com/telmich"
+    - blog: "http://www.nico.schottelius.org/blog/"
 
 - family_name: "Frei"
   given_name: "Daniel"
