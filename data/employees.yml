@@ -78,6 +78,16 @@
     - xing: "https://www.xing.com/profile/Adi_DeMasi"
     - github: "https://github.com/adi-de-masi"
 
+- family_name: "Djoga"
+  given_name: "Andrew"
+  image: "employees/andrew-djoga.jpg"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://ua.linkedin.com/in/djoga"
+    - github: "https://github.com/djo"
+
 - family_name: "Häussermann"
   given_name: "Immanuel"
   image: "employees/immanuel-haeussermann.jpg"
