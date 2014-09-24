@@ -133,6 +133,17 @@
     - github: "https://github.com/kaethorn"
     - blog: "http://blog.alphagemini.org/"
 
+- family_name: "Schmid"
+  given_name: "Raffael"
+  image: "employees/placeholder-man.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "https://www.linkedin.com/pub/raffael-schmid/77/a99/671"
+    - xing: "https://www.xing.com/profile/Raffael_Schmid2"
+    - github: "https://github.com/raffaelschmid"
+
 - family_name: "Staub"
   given_name: "Andi"
   image: "employees/andi-staub.jpg"
