@@ -122,10 +122,10 @@ div .navbar a.lang
   background: image_url('ci/background.png') left top repeat
 
 .claim
-  position: absolute
-
   h1
     text-shadow: 0 0 15px white
+    text-align: center
+    font-size: 50px
 
 .welcome
   position: relative
@@ -484,3 +484,11 @@ select
     width: 49%
     margin: 0
     padding: 0
+@media (max-width: 900px)
+  .stroke
+    display: none
+  .slogan
+    display: block
+    width: 100%
+    float: none
+    margin: 5px 0
