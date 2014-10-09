@@ -8,6 +8,7 @@
   links:
     - linkedin: "http://www.linkedin.com/pub/georgios-kontoleon/8/4b6/62a"
     - xing: "https://www.xing.com/profile/Georgios_Kontoleon"
+    - twitter: "https://twitter.com/deepgeorge"
 
 - family_name: "Mächler"
   given_name: "Martin"
@@ -76,6 +77,7 @@
     - "Software Engineer"
   links:
     - github: "https://github.com/manufaktor"
+    - twitter: "https://twitter.com/manufaktor"
 
 - family_name: "Hilbe"
   given_name: "Marcus"
@@ -94,6 +96,7 @@
     - linkedin: "http://www.linkedin.com/in/huerlisi"
     - xing: "https://www.xing.com/profile/Simon_Huerlimann3"
     - github: "https://github.com/huerlisi"
+    - twitter: "https://twitter.com/huerlisi"
 
 - family_name: "Koller"
   given_name: "Markus"
@@ -121,6 +124,7 @@
   links:
     - github: "https://github.com/koffeinfrei"
     - blog: "http://www.koffeinfrei.org/"
+    - twitter: "https://twitter.com/alexisreigel"
 
 - family_name: "Schmidt"
   given_name: "Falko"
@@ -143,6 +147,19 @@
     - linkedin: "https://www.linkedin.com/pub/raffael-schmid/77/a99/671"
     - xing: "https://www.xing.com/profile/Raffael_Schmid2"
     - github: "https://github.com/raffaelschmid"
+    - twitter: "https://twitter.com/raffaelschmid"
+
+- family_name: "Schuwey"
+  given_name: "Dominique"
+  image: "employees/placeholder-man.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "http://ch.linkedin.com/pub/dominique-schuwey/2a/3a1/592"
+    - xing: "https://www.xing.com/profile/Dominique_Schuwey"
+    - github: "https://github.com/domicode"
+    - twitter: "https://twitter.com/domi_code"
 
 - family_name: "Staub"
   given_name: "Andi"
@@ -193,6 +210,7 @@
     - linkedin: http://ch.linkedin.com/pub/nico-schottelius/27/98/30/
     - github: "https://github.com/telmich"
     - blog: "http://www.nico.schottelius.org/blog/"
+    - twitter: "https://twitter.com/NicoSchottelius"
 
 - family_name: "Isenegger"
   given_name: "Daniel"
@@ -224,6 +242,7 @@
   links:
     - linkedin: "http://www.linkedin.com/in/dafrei/en"
     - blog: "http://danielfrei.ch/zirkular"
+    - twitter: "http://twitter.com/da_frei"
 
 - family_name: "Gullà"
   given_name: "Roberto"
