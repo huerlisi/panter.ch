@@ -20,3 +20,6 @@
 *.swp
 *.swo
 .dropbox
+
+# Ignore compass sprite files
+source/img/icons-*.png
