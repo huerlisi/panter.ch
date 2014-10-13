@@ -62,6 +62,8 @@ activate :i18n, :langs => [:de, :en], :mount_at_root => :de
 
 # Build-specific configuration
 configure :build do
+  ignore 'source/img/icons/*.png'
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 
