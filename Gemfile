@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~>3.3.4'
+gem 'middleman'
 
 # Live-reloading plugin
-gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman-livereload'
 
-gem 'middleman-favicon-maker', '~> 3.7'
+gem 'middleman-favicon-maker'
 
-gem 'middleman-imageoptim', '~> 0.1.4'
+gem 'middleman-imageoptim'
 
 gem 'haml'
 gem 'bootstrap-sass'
