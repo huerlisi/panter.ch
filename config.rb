@@ -3,6 +3,8 @@ require 'bootstrap-sass'
 
 # Compass
 
+activate :sprockets
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
