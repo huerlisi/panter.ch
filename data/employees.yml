@@ -139,7 +139,7 @@
 
 - family_name: "Schmid"
   given_name: "Raffael"
-  image: "employees/placeholder-man.png"
+  image: "employees/raffael-schmid.png"
   partner: false
   job_titles:
     - "Software Engineer"
@@ -151,7 +151,7 @@
 
 - family_name: "Schuwey"
   given_name: "Dominique"
-  image: "employees/placeholder-man.png"
+  image: "employees/dominique-schuwey.png"
   partner: false
   job_titles:
     - "Software Engineer"
