@@ -189,6 +189,17 @@
     - linkedin: "http://ch.linkedin.com/pub/marco-wettstein/8b/893/b1b"
     - github: "https://github.com/macrozone"
 
+- family_name: "Witek"
+  given_name: "Tomáš"
+  image: "employees/placeholder-man.png"
+  partner: false
+  job_titles:
+    - "Software Engineer"
+  links:
+    - linkedin: "https://www.linkedin.com/pub/tomas-witek/44/1b3/940"
+    - github: "https://github.com/tomaswitek"
+    - twitter: "https://twitter.com/tomaswitek"
+
 - family_name: "Kurennyy"
   given_name: "Eugene"
   image: "employees/eugene-kurenyy.jpg"
