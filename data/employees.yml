@@ -41,7 +41,7 @@
     - linkedin: "http://www.linkedin.com/in/sambenz"
     - github: "https://github.com/sambenz"
 
-- family_name: "Bossard"
+- family_name: "Brossard"
   given_name: "Quentin"
   image: "employees/quentin-bossard.jpg"
   partner: false
@@ -49,6 +49,8 @@
     - "Software Engineer"
   links:
     - linkedin: "https://www.linkedin.com/in/quentinbrossard"
+    - github: "https://github.com/qbrossard"
+    - twitter: "https://twitter.com/qbrossard"
 
 - family_name: "Brönnimann"
   given_name: "Andreas"
