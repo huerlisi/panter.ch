@@ -1,0 +1,95 @@
+.discover-lean
+  .navbar
+    .container_12
+      .grid_12
+        %a.menu-link{ href: '#' }
+          = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars'
+          MENU
+        %a{ href: 'http://www.panter.ch' }
+          = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo'
+        %ul#menu
+          %li
+            %a{ href: 'http://www.panter.ch/#company' } ORGANISATION
+          %li
+            %a{ href: 'http://www.panter.ch/#team' } TEAM
+          %li
+            %a{ href: 'http://www.panter.ch/#services' } DIENSTLEISTUNGEN
+          %li
+            %a{ href: 'http://www.panter.ch/#customers'} KUNDEN
+          %li
+            %a{ href: 'http://www.panter.ch/#contact'} KONTAKT
+          %li
+            %a{ href: 'http://colab-zurich.ch', target: '_blank' } COLAB
+          %li
+            %a{ href: 'http://www.panter.ch/#newsletter'} NEWSLETTER
+  .section.blue
+    .container_12
+      .grid_12
+        = image_tag 'lean-entdecken/arrow-up-white.png', alt: 'Panter AG Image mark', class: 'mark'
+        %p Anmeldung
+        %p.italic Impulsabend LEAN entdecken
+  .container_12
+    .grid_12
+      %p.smaller
+        Design Thinking, Customer Development, Prototyping, MVP, Scrum, Agile Development, Lean Management und Innovation: Zahlreiche neue Anglizismen fluten die Kanäle, die aber mitunter nur schwer im Geschäftsalltag eingeordnet werden können. Aus diesem Grund freut es uns sehr, Sie zu unserem <span class='italic serif'>Impulsabend LEAN entdecken</span> am <b>Donnerstag, 20. November 2014</b>, einzuladen. Mit einer Einführung von <a href="http://www.griesbachconsulting.com/" target="_blank">Dr. David Griesbach</a>, Innovationsexperte, zu Lean Innovation, gelebten Beispielen und einer Podiumsdiskussion, wollen wir das Verständnis für die Lean-Methodik vertiefen. Davor und danach verbleibt genug Zeit für interessante Gespräche, neue Kontakte, sowie Speiss und Trank.
+      %p.smaller
+        %br
+        Wir freuen uns darauf, Sie und Ihre Begleitung bald persönlich begrüssen zu dürfen.
+  .container_12
+    .grid_12
+      .third
+        = image_tag 'lean-entdecken/geo.jpg'
+        %p.smaller
+          %a{ href: 'mailto:geo@panter.ch' } Georgios Kontoleon
+          %br
+          Partner
+      .third
+        = image_tag 'lean-entdecken/maa.jpg'
+        %p.smaller
+          %a{ href: 'mailto:maa@panter.ch' } Martin Mächler
+          %br
+          Partner
+      .third
+        = image_tag 'lean-entdecken/seb.jpg'
+        %p.smaller
+          %a{ href: 'mailto:seb@panter.ch' } Beat Seeliger
+          %br
+          Partner
+      .clear
+
+  .container_12.background
+    .grid_12
+      %h2 Anmelden
+      %form{:action => "http://formmail.dreamhost.com/cgi-bin/formmail.cgi", :method => "POST"}
+        %input{:name => "recipient", :type => "hidden", :value => "rog#panter.ch"}/
+        %input{:name => "recipient", :type => "hidden", :value => "frei#panter.ch"}/
+        %input{:name => "subject", :type => "hidden", :value => "Anmeldung Event"}/
+        %input{:name => "redirect", :type => "hidden", :value => "http://www.panter.ch/lean-entdecken-success.html#success"}/
+        .signup-form
+          .input-row
+            %label{ for: 'name' } Vor- und Nachnamen:
+            %input{ type: 'text', name: 'realname' }
+          .input-row
+            %label{ for: 'company' } Firma:
+            %input{ type: 'text', name: 'company' }
+          .input-row
+            %label{ for: 'address' } Strasse:
+            %input{ type: 'text', name: 'address' }
+          .input-row
+            %label{ for: 'place' } Plz/Ort:
+            %input{ type: 'text', name: 'place' }
+          .input-row
+            %label{ for: 'comment' } Bemerkung:
+            %textarea{ type: 'text', name: 'comment' }
+          .input-row
+            %input{ type: 'checkbox', checked:'checked' }
+            %p.smaller
+              Ja, ich nehme gerne teil und bringe
+              %input{ type: 'text', name: 'compagnions', class: 'amount' } weitere Gäste mit.
+              .companion
+                %label{ for: 'name' } Vor- und Nachnamen der Begleitpersonen:
+                %input{ type: 'text', name: 'compagnion_name' }
+
+          .input-row-btn
+            %input{ type: 'submit', value: 'Anmelden' }
+
