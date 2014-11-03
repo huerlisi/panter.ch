@@ -31,6 +31,7 @@ page "/recomy-best-of-swiss-web-2014.html", layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+redirect "lean/index.html", :to => "http://www.panter.ch/lean-entdecken.html"
 redirect "lean-entdecken/index.html", :to => "http://www.panter.ch/lean-entdecken.html"
 redirect "pantalk/index.html", :to => "http://www.meetup.com/Pantalks-tech-non-tech-talks-Panter-AG-Zurich/"
 
