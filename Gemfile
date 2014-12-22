@@ -9,5 +9,7 @@ gem 'middleman-favicon-maker'
 
 gem 'middleman-imageoptim'
 
+gem 'middleman-deploy'
+
 gem 'haml'
 gem 'bootstrap-sass'

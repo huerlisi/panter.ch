@@ -45,6 +45,18 @@ configure :development do
   activate :livereload
 end
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host = 'panter.ch'
+  deploy.user = 'panterch'
+  deploy.clean = true
+  if ENV['TARGET'].to_s == 'production'
+    deploy.path = 'www.panter.ch'
+  else
+    deploy.path = 'beta.panter.ch'
+  end
+end
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def other_lang(langs, lang)
@@ -90,4 +102,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  `chmod -R +r ~/build`
 end
