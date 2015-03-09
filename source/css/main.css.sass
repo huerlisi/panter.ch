@@ -84,6 +84,13 @@ a
     text-decoration: none
     color: #4d4d4d
 
+  a.top-logo
+    position: absolute
+    top: 5px
+    left: 10px
+    img
+      width: 200px
+
 .menu-link
   display: none
 
@@ -92,14 +99,6 @@ a
   width: 22px
   padding-right: 15px
 
-.navbar a.icons-top
-  position: absolute
-  left: 40px
-  top: 27px
-  height: 17px
-  width: 24px
-  background-size: 24px
-  text-indent: -9999px
 div .navbar a.lang
   position: absolute
   top: 0
@@ -126,6 +125,7 @@ div .navbar a.lang
     text-shadow: 0 0 15px white
     text-align: center
     font-size: 50px
+    margin-top: 120px
 
 .welcome
   position: relative
@@ -147,8 +147,7 @@ div .navbar a.lang
   position: relative
   text-align: center
   display: inline-block
-  margin: 10px 0 5px
-  width: 33%
+  margin: 10px
 
   a
     text-decoration: none
@@ -386,6 +385,11 @@ select
   .welcome
     background-position: left top
 
+  .navbar
+    a.top-logo
+      img
+        width: 150px
+
 @media (max-width: 1030px)
   div .navbar a.lang
     right: 0
@@ -401,16 +405,9 @@ select
       display: block
     a
       display: block
-      &.icons-top, &.lang
+      &.top-logo, &.lang
         display: block
-      &.icons-top
-        padding: 26px
-        top: 0
-        left: 0
-      &.back-to-top
-        top: 20px
-        left: 26px
-        padding: 0 !important
+
   .menu-link
     display: block
   .active
@@ -420,9 +417,14 @@ select
   .welcome
     background-size: auto 100%
 
+@media (max-width: 1140px)
+  .sponsorings
+    width: 100%
+
 @media (max-width: 930px)
   .welcome
     background-position: left top
+
 
 @media (max-width: 840px)
   .cycle-slideshow
@@ -440,9 +442,6 @@ select
     float: none
     padding-left: 0
 
-@media (max-width: 805px)
-  .sponsorings
-    width: 100%
 
 @media (max-width: 640px)
   body
@@ -451,8 +450,6 @@ select
   .navbar
     line-height: 60px
     height: 60px
-    a.icons-top
-      padding: 22px 26px
 
   h2
     font-size: 25px

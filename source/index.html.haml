@@ -1,6 +1,7 @@
 %div{ itemscope: '', itemtype: 'http://schema.org/Organization' }
   .navbar
-    %a.icons-top.back-to-top{ href: '#top' } Go to top
+    %a.back-to-top.top-logo{ href: '#top' }
+      = image_tag 'ci/logo_invert.png', class: 'brand', alt: 'Panter AG Logo', itemprop: 'logo'
     %a.menu-link{ href: '#' }
       = image_tag 'ci/bars.png', class: 'bars', alt: 'Menu bars'
       MENU
@@ -23,23 +24,24 @@
       = other_lang(langs, lang).upcase
 
   .section.welcome
-    .container_12
-      .grid_12
-        = image_tag 'ci/logo_invert_subline.png', class: 'brand', alt: 'Panter AG Logo', itemprop: 'logo'
-      .grid_12
-        .claim
-          %h1
-            <span class="slogan">Menschen</span><span class="stroke"> – </span><span class="slogan">Technologien</span><span class="stroke"> – </span><span class="slogan">Vorteile</span>
-  .container_12
-    .grid_12
-      .sponsorings
-        %a{ href: 'recomy-best-of-swiss-web-2014.html', target: '_blank' }
-          = image_tag 'sponsorings/bosw.jpg', alt: 'Best of Swiss Web Awards'
-          %span Gewinnerin #BOSW
-      .sponsorings
-        %a{ href: 'http://colab-zurich.ch', target: '_blank' }
-          = image_tag 'sponsorings/colab_bunny.jpg', class: 'conf', alt: 'Colab'
-          %span Mitinitiantin #ColabZurich
+
+  .grid_12
+    .sponsorings
+      %a{ href: 'http://bestofswissweb.ch/de/hall-of-fame/bestever/', target: '_blank' }
+        = image_tag 'sponsorings/bosw.jpg', alt: 'Best of Swiss Web Awards'
+        %span Gewinnerin #BOSW
+    .sponsorings
+      %a{ href: 'http://colab-zurich.ch', target: '_blank' }
+        = image_tag 'sponsorings/colab_bunny.jpg', class: 'conf', alt: 'Colab'
+        %span Initiantin #ColabZurich
+    .sponsorings
+      %a{ href: 'http://www.entrepreneur-club.org/', target: '_blank' }
+        = image_tag 'sponsorings/ec.png', class: 'conf', alt: 'Entrepreneur club'
+        %span Supporterin
+    .sponsorings
+      %a{ href: 'http://www.vorboten.ch', target: '_blank' }
+        = image_tag 'sponsorings/vorboten.png', class: 'conf', alt: 'Vorboten'
+        %span #Vorboten
   #company.section.background
     .container_12
       .grid_12
