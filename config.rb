@@ -55,6 +55,9 @@ activate :deploy do |deploy|
   else
     deploy.path = 'beta.panter.ch'
   end
+
+  # temporary: ignore the next-landing-page folder
+  deploy.flags = '-avz --exclude next-landing-page'
 end
 
 # Methods defined in the helpers block are available in templates
