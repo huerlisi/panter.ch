@@ -244,16 +244,6 @@
     - linkedin: "https://www.linkedin.com/pub/daniel-isenegger/6/887/81a"
     - xing: "https://www.xing.com/profile/Daniel_Isenegger"
 
-- family_name: "Trolese"
-  given_name: "Flavio"
-  image: "employees/flavio-trolese.jpg"
-  partner: false
-  job_titles:
-    - "Project Management"
-  links:
-    - linkedin: "http://www.linkedin.com/pub/flavio-trolese/6/a2b/836"
-    - xing: "https://www.xing.com/profile/Flavio_Trolese"
-
 - family_name: "Frei"
   given_name: "Daniel"
   image: "employees/daniel-frei.jpg"
