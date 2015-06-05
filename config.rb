@@ -57,7 +57,7 @@ activate :deploy do |deploy|
   end
 
   # temporary: ignore the next-landing-page folder
-  deploy.flags = '-avz --exclude next-landing-page'
+  deploy.flags = '-avz --exclude next-landing-page --exclude talks'
 end
 
 # Methods defined in the helpers block are available in templates
