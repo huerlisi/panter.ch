@@ -164,6 +164,3 @@ DEPENDENCIES
   middleman-favicon-maker
   middleman-imageoptim
   middleman-livereload
-
-BUNDLED WITH
-   1.10.2
