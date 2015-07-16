@@ -266,12 +266,3 @@
     - "Finance"
   links:
     - linkedin: "http://ch.linkedin.com/in/robertogulla"
-
-- family_name: "Steimer"
-  given_name: "Henry"
-  image: "employees/henry-steimer.jpg"
-  partner: false
-  job_titles:
-    - "Community Manager"
-  links:
-    - linkedin: "http://ch.linkedin.com/in/henrysteimer"
