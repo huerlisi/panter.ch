@@ -244,18 +244,6 @@
     - linkedin: "https://www.linkedin.com/pub/daniel-isenegger/6/887/81a"
     - xing: "https://www.xing.com/profile/Daniel_Isenegger"
 
-- family_name: "Frei"
-  given_name: "Daniel"
-  image: "employees/daniel-frei.jpg"
-  partner: false
-  job_titles:
-    - "Community Management"
-    - "Communication"
-  links:
-    - linkedin: "http://www.linkedin.com/in/dafrei/en"
-    - blog: "http://danielfrei.ch/zirkular"
-    - twitter: "http://twitter.com/da_frei"
-
 - family_name: "Gullà"
   given_name: "Roberto"
   image: "employees/roberto-gulla.jpg"
