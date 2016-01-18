@@ -1,0 +1,60 @@
+---
+layout: false
+---
+
+%html{ lang: lang }
+  = partial 'partials/header'
+  %body{ style: 'padding-top: 0' }
+    %div{ itemscope: '', itemtype: 'http://schema.org/Organization' }
+      .section.background
+        .container_12
+          .grid_12
+            %h2 “Free Software and Your Freedom“<br> by Richard Stallman
+            %h2 Pantalk 08.02.2016, 18:00
+            %p
+              Richard Stallman will speak about the goals and philosophy of the
+              Free Software Movement, and the status and history of the GNU
+              operating system, which in combination with the kernel Linux is
+              now used by tens of millions of users world-wide.
+            %p.smaller
+              Dr. Richard Stallman launched the free software movement in
+              1983 and started the development of the GNU operating system
+              (see <a href="http://www.gnu.org">www.gnu.org</a>) in 1984.
+              GNU is free software: everyone has the freedom to copy it and
+              redistribute it, with or without changes.  The GNU/Linux
+              system, basically the GNU operating system with Linux added, is
+              used on tens of millions of computers today.  Stallman has
+              received the ACM Grace Hopper Award, a MacArthur Foundation
+              fellowship, the Electronic Frontier Foundation's Pioneer Award,
+              and the the Takeda Award for Social/Economic Betterment, as
+              well as several doctorates honoris causa, and has been inducted
+              into the Internet Hall of Fame.
+
+      .section
+        .container_12
+          .grid_12
+            %p.smaller
+              The talk will be held at the <a href="https://zurich.impacthub.ch/de/spaces/colab-location/">Impact Hub Zürich Colab</a> (<a href="http://www.openstreetmap.org/way/224266687#map=18/47.38484/8.53378&layers=H">Map</a>).
+
+            %p.smaller
+              Richard Stallman's speech will be nontechnical, admission is
+              gratis, and the public is encouraged to attend.
+            %p.smaller
+              The location has limited capacity.<br>
+              Please <a href="https://my.fsf.org/civicrm/profile/create?gid=431&reset=1">register</a>,
+              which can be done anonymously, so we can ensure that we can
+              accommodate all the people who wish to attend.
+            %p.smaller
+              There will be FSF items to buy, the possibility to join the FSF
+              and the chance to bid for the gnu that will be auctioned by
+              Richard Stallman. Attendees are invited to bring cash. 
+
+      .section.background
+        .container_12
+          .grid_12
+            %p
+              = link_to 'http://www.panter.ch' do
+                = image_tag 'ci/logo_invert.png', alt: 'Panter AG Logo', width: '250px'
+            %p
+              = link_to 'https://zurich.impacthub.ch' do
+                = image_tag 'https://zurich.impacthub.ch/wp-content/themes/naked-wordpress-master/img/logos/Logo_IHZ_entrepreneurs_creatives_techies_300dpi.png', width: '500px', alt: 'Impact Hub Zürich Logo'
