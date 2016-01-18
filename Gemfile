@@ -14,3 +14,6 @@ gem 'middleman-deploy'
 
 gem 'haml'
 gem 'bootstrap-sass'
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'

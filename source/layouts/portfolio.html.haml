@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title
+      = current_page.data.head_title
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    = stylesheet_link_tag 'portfolio'
+  %body
+    = yield
