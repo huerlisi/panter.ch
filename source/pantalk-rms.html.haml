@@ -3,58 +3,84 @@ layout: false
 ---
 
 %html{ lang: lang }
-  = partial 'partials/header'
-  %body{ style: 'padding-top: 0' }
-    %div{ itemscope: '', itemtype: 'http://schema.org/Organization' }
-      .section.background
-        .container_12
-          .grid_12
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => I18n.t(:description), :name => "description"}/
+    %title Pantalk - “Free Software and Your Freedom“ by Richard Stallman
+
+    %link{:href => "http://fonts.googleapis.com/css?family=Merriweather:400,700,300", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600", :rel => "stylesheet", :type => "text/css"}/
+
+    %link{ rel: 'apple-touch-icon', sizes: '152x152', href: 'apple-touch-icon-152x152-precomposed.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '144x144', href: 'apple-touch-icon-144x144-precomposed.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '114x114', href: 'apple-touch-icon-114x114-precomposed.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '72x72', href: 'apple-touch-icon-72x72-precomposed.png' }
+    %link{ rel: 'apple-touch-icon', href: 'apple-touch-icon-precomposed.png' }
+    %link{ rel: 'shortcut icon', href: 'favicon.png' }
+    %link{ rel: 'icon', type: 'image/ico', href: 'favicon.ico' }
+
+    %link{:href => "favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "/apple-touch-icon-precomposed.png", :rel => "apple-touch-icon"}/
+
+    = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'rms'
+
+  %body
+    #banner.visible-md-block.visible-lg-block.hidden-xs
+      %h2#author Richard Stallman
+      %h2#title “Free Software and Your Freedom“
+    .section.background
+      .container_12
+        .grid_12
+          .visible-xs-block.visible-sm-block.hidden-md
             %h2 “Free Software and Your Freedom“<br> by Richard Stallman
-            %h2 Pantalk 08.02.2016, 18:00
-            %p
-              Richard Stallman will speak about the goals and philosophy of the
-              Free Software Movement, and the status and history of the GNU
-              operating system, which in combination with the kernel Linux is
-              now used by tens of millions of users world-wide.
-            %p.smaller
-              Dr. Richard Stallman launched the free software movement in
-              1983 and started the development of the GNU operating system
-              (see <a href="http://www.gnu.org">www.gnu.org</a>) in 1984.
-              GNU is free software: everyone has the freedom to copy it and
-              redistribute it, with or without changes.  The GNU/Linux
-              system, basically the GNU operating system with Linux added, is
-              used on tens of millions of computers today.  Stallman has
-              received the ACM Grace Hopper Award, a MacArthur Foundation
-              fellowship, the Electronic Frontier Foundation's Pioneer Award,
-              and the the Takeda Award for Social/Economic Betterment, as
-              well as several doctorates honoris causa, and has been inducted
-              into the Internet Hall of Fame.
+          %h2 Pantalk 08.02.2016, 18:00
+          %p
+            Richard Stallman will speak about the goals and philosophy of the
+            Free Software Movement, and the status and history of the GNU
+            operating system, which in combination with the kernel Linux is
+            now used by tens of millions of users world-wide.
+          %p.smaller
+            Dr. Richard Stallman launched the free software movement in
+            1983 and started the development of the GNU operating system
+            (see <a href="http://www.gnu.org">www.gnu.org</a>) in 1984.
+            GNU is free software: everyone has the freedom to copy it and
+            redistribute it, with or without changes.  The GNU/Linux
+            system, basically the GNU operating system with Linux added, is
+            used on tens of millions of computers today.  Stallman has
+            received the ACM Grace Hopper Award, a MacArthur Foundation
+            fellowship, the Electronic Frontier Foundation's Pioneer Award,
+            and the the Takeda Award for Social/Economic Betterment, as
+            well as several doctorates honoris causa, and has been inducted
+            into the Internet Hall of Fame.
 
-      .section
-        .container_12
-          .grid_12
-            %p.smaller
-              The talk will be held at the <a href="https://zurich.impacthub.ch/de/spaces/colab-location/">Impact Hub Zürich Colab</a> (<a href="http://www.openstreetmap.org/way/224266687#map=18/47.38484/8.53378&layers=H">Map</a>).
+    .section
+      .container_12
+        .grid_12
+          %p.smaller
+            The talk will be held at the <a href="https://zurich.impacthub.ch/de/spaces/colab-location/">Impact Hub Zürich Colab</a> (<a href="http://www.openstreetmap.org/way/224266687#map=18/47.38484/8.53378&layers=H">Map</a>).
 
-            %p.smaller
-              Richard Stallman's speech will be nontechnical, admission is
-              gratis, and the public is encouraged to attend.
-            %p.smaller
-              The location has limited capacity.<br>
-              Please <a href="https://my.fsf.org/civicrm/profile/create?gid=431&reset=1">register</a>,
-              which can be done anonymously, so we can ensure that we can
-              accommodate all the people who wish to attend.
-            %p.smaller
-              There will be FSF items to buy, the possibility to join the FSF
-              and the chance to bid for the gnu that will be auctioned by
-              Richard Stallman. Attendees are invited to bring cash. 
+          %p.smaller
+            Richard Stallman's speech will be nontechnical, admission is
+            gratis, and the public is encouraged to attend.
+          %p.smaller
+            The location has limited capacity.<br>
+            Please <a href="https://my.fsf.org/civicrm/profile/create?gid=431&reset=1">register</a>,
+            which can be done anonymously, so we can ensure that we can
+            accommodate all the people who wish to attend.
+          %p.smaller
+            There will be FSF items to buy, the possibility to join the FSF
+            and the chance to bid for the gnu that will be auctioned by
+            Richard Stallman. Attendees are invited to bring cash.
 
-      .section.background
-        .container_12
-          .grid_12
-            %p
-              = link_to 'http://www.panter.ch' do
-                = image_tag 'ci/logo_invert.png', alt: 'Panter AG Logo', width: '250px'
-            %p
-              = link_to 'https://zurich.impacthub.ch' do
-                = image_tag 'https://zurich.impacthub.ch/wp-content/themes/naked-wordpress-master/img/logos/Logo_IHZ_entrepreneurs_creatives_techies_300dpi.png', width: '500px', alt: 'Impact Hub Zürich Logo'
+    .section.background
+      .container_12
+        .grid_12
+          %p
+            = link_to 'http://www.panter.ch' do
+              = image_tag 'ci/logo_invert.png', alt: 'Panter AG Logo', width: '250px'
+          %p
+            = link_to 'https://zurich.impacthub.ch' do
+              = image_tag 'https://zurich.impacthub.ch/wp-content/themes/naked-wordpress-master/img/logos/Logo_IHZ_entrepreneurs_creatives_techies_300dpi.png', width: '500px', alt: 'Impact Hub Zürich Logo'
