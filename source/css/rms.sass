@@ -1,0 +1,40 @@
+body
+  padding-top: 0
+
+#banner
+  height: 35%
+  background: image_url('rms/banner.jpg') no-repeat right
+  background-size: cover
+  color: #fff
+  position: relative
+  box-shadow: 0 2px 2px #039ead
+  margin-bottom: 4px
+
+#author
+  position: absolute
+  left: 0
+  bottom: 80px
+  display: inline-block
+  background: #4d5667
+  padding: 25px
+  z-index: 1
+  line-height: 60px
+  box-shadow: 0 2px 2px #4d5667
+
+  &:after
+    content: ''
+    border: 55px solid #4d5667
+    position: absolute
+    top: 0
+    right: -110px
+    border-right-color: transparent
+    box-shadow: -2px 2px 2px #4d5667
+
+#title
+  position: absolute
+  left: 0
+  width: 100%
+  box-sizing: border-box
+  bottom: 0
+  background: #039ead
+  padding: 10px
