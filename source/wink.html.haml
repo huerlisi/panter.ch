@@ -3,30 +3,31 @@ layout: portfolio
 head_title: 'Wink'
 ---
 
-%header.content
-  = image_tag 'bosw_wink/wink_logo.png'
-  %h1 Die Nachbarschafts-Community-Plattform der Allgemeinen Baugenossenschaft Zürich
+#parallax-1-container
+  %header.content
+    = image_tag 'bosw_wink/wink_logo.png'
+    %h1 Die Nachbarschafts-Community-Plattform der Allgemeinen Baugenossenschaft Zürich
 
-.js-parallax-window.parallax-window.parallax-1
-  .js-parallax-background.parallax-background
+  .parallax-window.parallax-1
+    .parallax-background{ data: { top_bottom: "background-position: 50% -400px;", center: "background-position: 50% 0px;", anchor_target: '#parallax-1-container' } }
 
-.content
-  %p
-    In Zürich und Umgebung baut die Allgemeine Baugenossenschaft Zürich (ABZ)
-    Siedlungen für ein gemeinschaftsorientiertes Wohnen und Zusammenleben.  Die
-    ABZ bietet den Mitgliedern faire und günstige Mieten, Mitsprache- und
-    Mitwirkungsmöglichkeiten, ein angenehmes Wohnumfeld und eine gute
-    Nachbarschaft. 
+  .content
+    %p
+      In Zürich und Umgebung baut die Allgemeine Baugenossenschaft Zürich (ABZ)
+      Siedlungen für ein gemeinschaftsorientiertes Wohnen und Zusammenleben.  Die
+      ABZ bietet den Mitgliedern faire und günstige Mieten, Mitsprache- und
+      Mitwirkungsmöglichkeiten, ein angenehmes Wohnumfeld und eine gute
+      Nachbarschaft.
 
-  = image_tag 'bosw_wink/showcase_image_2.png'
+    = image_tag 'bosw_wink/showcase_image_2.png'
 
 .content-full.color-1
   .content
     %h2 Briefing
     %h3 Innovation, die der Gemeinschaft dient
 
-.js-parallax-window.parallax-window.parallax-2
-  .js-parallax-background.parallax-background
+.parallax-window.parallax-2#parallax-2-container
+  .parallax-background{ data: { top_bottom: "background-position: 50% -200px;", center: "background-position: 50% 0px;" } }
 
   .parallax-footer-background &nbsp;
   .parallax-footer-image
