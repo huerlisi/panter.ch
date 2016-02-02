@@ -1,8 +1,23 @@
+header
+  img
+    @include pad(0 0 flex-gutter() 0)
+    width: 50%
+    max-width: 400px
+
 .content
   @include outer-container
   @include pad(modular-scale(2, flex-gutter()) flex-gutter() modular-scale(2, flex-gutter()) flex-gutter())
 
   text-align: center
+  font-size: $base-font-size
+
+.content-full
+  &.color-1
+    background: #84c7b4
+    color: #fff
+  &.color-2
+    background: #eaa26f
+    color: #fff
 
   article
     @include media($medium-screen-up)

@@ -1,30 +1,23 @@
 $(document).ready(function() {
-  if ($("#js-parallax-window").length) {
-    parallax();
-  }
+  parallax();
 });
 
-$(window).scroll(function(e) {
-  if ($("#js-parallax-window").length) {
-    parallax();
-  }
+$(window).scroll(function() {
+  parallax();
 });
 
 function parallax(){
-  if( $("#js-parallax-window").length > 0 ) {
-    var plxBackground = $("#js-parallax-background");
-    var plxWindow = $("#js-parallax-window");
+  $(".js-parallax-window").each(function() {
+    var plxWindow = $(this);
+    var plxBackground = plxWindow.find(".js-parallax-background");
 
     var plxWindowTopToPageTop = $(plxWindow).offset().top;
     var windowTopToPageTop = $(window).scrollTop();
     var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
 
-    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
-    var windowInnerHeight = window.innerHeight;
-    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
-    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
-    var plxSpeed = 0.35;
+    var plxSpeed = 0.65;
 
     plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
-  }
+    // plxBackground.animate({top: - (plxWindowTopToWindowTop * plxSpeed) + 'px'}, 0.001);
+  });
 }
