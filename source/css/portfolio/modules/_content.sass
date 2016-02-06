@@ -18,8 +18,14 @@ header
   &.color-2
     background: #eaa26f
     color: #fff
+  &.color-3
+    background: #e4ced0
+    color: #fff
 
   article
     @include media($medium-screen-up)
       @include span-columns(7 of 12)
       @include shift(2.5)
+
+.button-section
+  padding-top: modular-scale(2, flex-gutter())
