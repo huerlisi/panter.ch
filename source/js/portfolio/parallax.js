@@ -1,3 +1,5 @@
 $(document).ready(function() {
-  skrollr.init();
+  if (window.innerWidth > 700) {
+    skrollr.init();
+  }
 });
