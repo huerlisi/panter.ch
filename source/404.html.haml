@@ -1,0 +1,25 @@
+---
+layout: false
+---
+
+%html{ lang: lang }
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => I18n.t(:description), :name => "description"}/
+    %title Seite nicht gefunden
+
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600", :rel => "stylesheet", :type => "text/css"}/
+
+    = stylesheet_link_tag 'application'
+
+  %body
+    .section
+      .container_12
+        .grid_12
+          %h2 404
+          %h5 Diese Seite konnte nicht gefunden werden.
+          %p
+            = link_to 'http://www.panter.ch' do
+              = image_tag 'ci/logo_invert.png', alt: 'Panter AG Logo', width: '250px'

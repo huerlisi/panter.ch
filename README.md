@@ -5,7 +5,9 @@ This website is built using [Middleman](https://middlemanapp.com/).
 ## Setup
 
 ```sh
+rbenv install
 bundle
+bundle exec middleman server
 ```
 
 ## Deployment
