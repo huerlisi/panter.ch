@@ -95,8 +95,8 @@ configure :build do
     }
   end
 
-  # Use relative URLs
-  activate :relative_assets
+  # Use absolute URLs, this is needed for error pages
+  #activate :relative_assets
 
   activate :imageoptim
 
