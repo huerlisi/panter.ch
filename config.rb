@@ -65,6 +65,11 @@ helpers do
   def other_lang(langs, lang)
     (langs - [lang.to_sym]).first.to_s
   end
+
+  def rms_images
+    Dir['source/img/rms/gallery/preview/*']
+      .map { |image| image.sub(/^source\/img\//, '') }
+  end
 end
 
 set :css_dir, 'css'

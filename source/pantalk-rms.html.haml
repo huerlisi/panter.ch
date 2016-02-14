@@ -27,6 +27,8 @@ layout: false
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag 'rms'
 
+    = javascript_include_tag 'rms'
+
   %body
     #banner.visible-md-block.visible-lg-block.hidden-xs
       %h2#author Richard Stallman
@@ -36,44 +38,42 @@ layout: false
         .grid_12
           .visible-xs-block.visible-sm-block.hidden-md
             %h2 “Free Software and Your Freedom“<br> by Richard Stallman
-          %h2 Pantalk 08.02.2016, 18:00
-          %p
-            Richard Stallman will speak about the goals and philosophy of the
-            Free Software Movement, and the status and history of the GNU
-            operating system, which in combination with the kernel Linux is
-            now used by tens of millions of users world-wide.
+          %h2 Looking back: Pantalk 08.02.2016
           %p.smaller
-            Dr. Richard Stallman launched the free software movement in
-            1983 and started the development of the GNU operating system
-            (see <a href="http://www.gnu.org">www.gnu.org</a>) in 1984.
-            GNU is free software: everyone has the freedom to copy it and
-            redistribute it, with or without changes.  The GNU/Linux
-            system, basically the GNU operating system with Linux added, is
-            used on tens of millions of computers today.  Stallman has
-            received the ACM Grace Hopper Award, a MacArthur Foundation
-            fellowship, the Electronic Frontier Foundation's Pioneer Award,
-            and the the Takeda Award for Social/Economic Betterment, as
-            well as several doctorates honoris causa, and has been inducted
-            into the Internet Hall of Fame.
+            It was truly a pleasure hosting Richard Stallman at Pantalks
+            earlier this month. Stallman’s talk about „Free Software and Your
+            Freedom“ attracted around 200 visitors which were clearly delighted
+            with what they saw and heard. Stallman obviously too enjoyed being
+            at the Colab of Impact HUB Zürich as he exceeded his talk which was
+            initially planned to be 1 hour and added an extended Q &amp; A round -
+            must have been the green tea we served him.
+          %p.smaller
+            The talk was broadcast live to 2 additional screens in the Colab
+            thus everyone had a good view even at Stallman’s humorous
+            performance in the end.
+          %p.smaller
+            You can watch Richard Stallman’s Talk „Free
+            Software and Your Freedom“ online:<br>
+            = link_to 'Richard Stallman - Pantalk 16.02.2016', 'http://www.panter.ch/files/pantalk_rms/160210-PanTalks-Richard_Stallman-FM.webm', target: '_blank'
 
     .section
       .container_12
         .grid_12
           %p.smaller
-            The talk will be held at the <a href="https://zurich.impacthub.ch/de/spaces/colab-location/">Impact Hub Zürich Colab</a> (<a href="http://www.openstreetmap.org/way/224266687#map=18/47.38484/8.53378&layers=H">Map</a>).
+            Some impressions of the evening:
+
+          %p.smaller<>
+            - rms_images.each do |image|
+              = link_to image_path(image.sub(/\/preview/, '')), class: "fancybox", rel: "gallery1" do
+                = image_tag image, width: '120px', height: '120px'
 
           %p.smaller
-            Richard Stallman's speech will be nontechnical, admission is
-            gratis, and the public is encouraged to attend.
+            And here's the video of the talk:
+
           %p.smaller
-            The location has limited capacity.<br>
-            Please <a href="https://my.fsf.org/civicrm/profile/create?gid=431&reset=1">register</a>,
-            which can be done anonymously, so we can ensure that we can
-            accommodate all the people who wish to attend.
-          %p.smaller
-            There will be FSF items to buy, the possibility to join the FSF
-            and the chance to bid for the gnu that will be auctioned by
-            Richard Stallman. Attendees are invited to bring cash.
+            %video{ controls: true, poster: image_path('rms/video_poster.jpg') }
+              %source{ src: "http://www.panter.ch/files/pantalk_rms/160210-PanTalks-Richard_Stallman-FM.mp4", type: 'video/mp4' }/
+              %source{ src: "http://www.panter.ch/files/pantalk_rms/160210-PanTalks-Richard_Stallman-FM.webm", type: 'video/webm;codecs="vp8, vorbis"'}/
 
     .section.background
       .container_12
