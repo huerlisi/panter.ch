@@ -1,0 +1,217 @@
+@font-face {
+  font-family: averta;
+  src: url(../fonts/averta_semibold.eot);
+  src: url(../fonts/averta_semibold.ttf);
+  src: url(../fonts/averta_semibold.woff);
+  src: url(../fonts/averta_semibold.woff2);
+}
+
+body {
+  font-family: averta, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.bannertext {
+  position: relative;
+  top: 52px;
+  display: block;
+  width: 404px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+  color: #fff;
+  font-size: 64px;
+  font-style: italic;
+  text-align: center;
+}
+
+.newsletter {
+  position: static;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.container {
+  position: relative;
+  top: 147px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banner {
+  display: block;
+  overflow: hidden;
+  height: 560px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#mc_embed_signup {
+  clear:left;
+  width:100%;
+}
+
+#mc_embed_signup label {
+  display:block;
+  padding-bottom:15px;
+  font-weight: normal;
+}
+
+#mc_embed_signup .button {
+  margin-top: 20px;
+  width:auto;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: #2769E8;
+  box-sizing:border-box;
+  height:40px;
+  line-height:40px;
+  padding:0 30px;
+  display: inline-block;
+  transition: all 0.23s ease-in-out 0s;
+}
+
+#mc_embed_signup form {
+  text-align:center;
+  padding: 85px 10px 0px 10px;
+  height:300px
+}
+
+#mc_embed_signup input.email {
+  border: 1px solid black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #343434;
+  background-color: #fff;
+  box-sizing:border-box;
+  height:32px;
+  padding: 0px 0.4em;
+  display: inline-block;
+  width:300px;
+  vertical-align:middle;
+  margin:5px;
+  font-size: 16px;
+}
+
+.pantermail {
+  position: relative;
+  top: 78px;
+  display: block;
+  width: 120px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: #2769e8;
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact {
+  height: 410px;
+  background-color: black;
+}
+
+.logo {
+  position: fixed;
+  top: 16px;
+  width: 118px;
+}
+
+.adresse {
+  position: relative;
+  top: 57px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.adresse ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.adresse li {
+  display: inline-block;
+  padding: 1.5rem
+}
+
+.adresse li:first-of-type {
+  font-size: 24px;
+}
+
+.adresse li.block {
+  display: block;
+}
+
+.adresse a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .bannertext {
+    position: relative;
+    top: -45px;
+  }
+  .banner {
+    height: 312px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bannertext {
+    top: -71px;
+    width: 321px;
+  }
+  .banner {
+    height: 269px;
+  }
+  .logo {
+    position: relative;
+    top: -202px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 630px) {
+  .adresse ul {
+    padding: 0 0.8rem
+  }
+
+  .adresse li {
+    display: block;
+    padding: 10px 0
+  }
+}
+
+@media (max-width: 479px) {
+  .bannertext {
+    position: relative;
+    top: -72px;
+    width: 251px;
+  }
+  .banner {
+    height: auto;
+    min-height: 144px;
+  }
+  .pantermail {
+    top: 81px;
+  }
+  .logo {
+    top: -176px;
+    width: 103px;
+  }
+}
