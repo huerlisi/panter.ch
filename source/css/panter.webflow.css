@@ -100,6 +100,10 @@ body {
   font-size: 16px;
 }
 
+#mc-embedded-subscribe {
+  margin-top: 12px;
+}
+
 .pantermail {
   display: block;
   width: 120px;
