@@ -101,8 +101,6 @@ body {
 }
 
 .pantermail {
-  position: relative;
-  top: 78px;
   display: block;
   width: 120px;
   height: 40px;
@@ -130,7 +128,7 @@ body {
 
 .adresse {
   position: relative;
-  top: 57px;
+  top: 48px;
   text-align: center;
   color: white;
   letter-spacing: 0.1rem;
@@ -139,6 +137,9 @@ body {
 .adresse ul {
   list-style: none;
   padding-left: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
 }
 
 .adresse li {
@@ -148,6 +149,7 @@ body {
 
 .adresse li:first-of-type {
   font-size: 24px;
+  line-height: 1.8rem
 }
 
 .adresse li.block {
