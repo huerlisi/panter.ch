@@ -44,7 +44,7 @@ body {
 .banner {
   display: block;
   overflow: hidden;
-  height: 560px;
+  height: 551px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 #mc-embedded-subscribe {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .pantermail {
