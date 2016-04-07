@@ -44,7 +44,6 @@ body {
 .banner {
   display: block;
   overflow: hidden;
-  height: 551px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -120,22 +119,22 @@ body {
 }
 
 .contact {
-  height: 410px;
   background-color: black;
+  padding: 80px 0;
 }
 
 .logo {
   position: fixed;
   top: 16px;
-  width: 118px;
+  left: 25px;
+  width: 150px;
 }
 
 .adresse {
-  position: relative;
-  top: 48px;
+  /*position: relative;
+  top: 48px;*/
   text-align: center;
   color: white;
-  letter-spacing: 0.1rem;
 }
 
 .adresse ul {
@@ -144,17 +143,18 @@ body {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0;
+  margin-bottom: 30px;
 }
 
 .adresse li {
   display: inline-block;
-  padding: 1.5rem
+  padding: 0 1.5rem
 }
 
-.adresse li:first-of-type {
+/*.adresse li:first-of-type {
   font-size: 24px;
   line-height: 1.8rem
-}
+}*/
 
 .adresse li.block {
   display: block;
@@ -165,13 +165,14 @@ body {
   color: white;
 }
 
+vjs-control-bar {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .bannertext {
     position: relative;
     top: -45px;
-  }
-  .banner {
-    height: 312px;
   }
 }
 
@@ -180,16 +181,13 @@ body {
     top: -71px;
     width: 321px;
   }
-  .banner {
-    height: 258px;
-  }
-  .logo {
+  /*.logo {
     position: relative;
     top: -202px;
     display: block;
     margin-right: auto;
     margin-left: auto;
-  }
+  }*/
 }
 
 @media (max-width: 630px) {
@@ -209,10 +207,6 @@ body {
     top: -72px;
     width: 251px;
   }
-  .banner {
-    height: auto;
-    min-height: 180px;
-  }
 
   .adresse {
     top: 17px;
@@ -222,7 +216,7 @@ body {
     top: 81px;
   }
   .logo {
-    top: -176px;
-    width: 103px;
+    top: 27px;
+    width: 110px;
   }
 }
