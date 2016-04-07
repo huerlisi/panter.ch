@@ -181,7 +181,7 @@ body {
     width: 321px;
   }
   .banner {
-    height: 269px;
+    height: 258px;
   }
   .logo {
     position: relative;
@@ -211,8 +211,13 @@ body {
   }
   .banner {
     height: auto;
-    min-height: 144px;
+    min-height: 180px;
   }
+
+  .adresse {
+    top: 17px;
+  }
+
   .pantermail {
     top: 81px;
   }
