@@ -9,3 +9,4 @@ ErrorDocument 403 /404.html
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.panter\.ch$
 RewriteRule ^(.*)$ http://www.panter.ch/$1 [R=301,L]
+RewriteRule ^jobs$ /files/job-frontend.html [L]
